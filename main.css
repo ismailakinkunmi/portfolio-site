@@ -5,12 +5,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fff;
+}
+
 /* header section */
 .header-section {
   display: flex;
   flex-direction: row;
   column-gap: 17em;
-  padding: 10px 12px;
+  padding: 10px 12px 0 20px;
 }
 
 .logo a {
@@ -23,43 +27,35 @@
   height: 587.1460571289062px;
   width: 462px;
   left: -34px;
-  top: 103.9993896484375px;
-  border-radius: 0px;
 }
 
 .author,
 .article,
 .connect {
-  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
 }
 
-.main-section .author {
-  font-family: Poppins;
-  font-size: 40px;
+.author {
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0em;
   text-align: left;
+  padding-top: 50px;
 }
 
 .article {
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding-right: 8vw;
+  padding-right: 120px;
 }
+
 .connect {
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
