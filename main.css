@@ -1,27 +1,44 @@
-/*------------- BASIC SETUP --------------*/
+/* basic setup */
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
+/* body section */
 body {
-  width: 375px;
   height: 718px;
-  background-color: #fff;
+  width: 375px;
+  left: 0px;
+  top: 0px;
+  border-radius: [object Object]px;
 }
 
 /* header section */
 .header-section {
   display: flex;
-  column-gap: 14em;
-  padding: 10px;
-  margin-bottom: 30px;
+  flex-direction: row;
+  column-gap: 17em;
+  padding: 10px 12px;
 }
 
-/* main-section */
+.main-section {
+  background-image: url("img/header-shapes mobile.png");
+  background-repeat: no-repeat;
+  height: 587.1460571289062px;
+  width: 462px;
+  left: -34px;
+  top: 103.9993896484375px;
+  border-radius: 0px;
+}
 
-.author {
+.author,
+.article,
+.connect {
+  padding: 0 20px;
+}
+
+.main-section .author {
   font-family: Poppins;
   font-size: 40px;
   font-style: normal;
@@ -29,10 +46,9 @@ body {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
-  width: 300px;
 }
 
-.author-detail {
+.article {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -40,6 +56,7 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  padding-right: 8vw;
 }
 .connect {
   font-family: Poppins;
@@ -51,10 +68,7 @@ body {
   text-align: left;
 }
 
-.content {
-  padding: 5px 30px 5px 20px;
-}
-
+/* social media icons  */
 .social-icons {
   padding: 20px;
 }
@@ -62,92 +76,4 @@ body {
 .social-icons .iconify {
   padding: 0 5px;
   font-size: 2em;
-}
-
-.main-section {
-  width: inherit;
-  height: 400px;
-}
-/* ellipse-image section */
-.row {
-  width: 70%;
-}
-
-.top-row {
-  height: 200px;
-  width: inherit;
-  display: flex;
-  margin: 10px 0;
-}
-
-.col-one {
-  width: 250px;
-  height: inherit;
-  background-image: url("img/Ellipse5.png");
-  background-repeat: no-repeat;
-}
-
-.row-two {
-  padding: 0 20px;
-}
-
-.col-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 5px;
-  height: 200px;
-}
-
-.col-one-row {
-  display: flex;
-  flex-grow: 1;
-}
-
-.col-one-row-col-one {
-  height: 50px;
-  width: 125px;
-  background-image: url("img/Ellipse5.png");
-  background-repeat: no-repeat;
-}
-
-.col-one-row-col-two {
-  height: 50px;
-  width: 125px;
-  background-image: url("img/Rectangle4.png");
-  background-repeat: no-repeat;
-}
-
-.col-two {
-  width: 100px;
-  height: inherit;
-  background-image: url("img/Ellipse3.png");
-  background-repeat: no-repeat;
-}
-.connect-ellipse {
-  height: 50px;
-  width: inherit;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.col-ellipse {
-  column-gap: 16em;
-  background-image: url("img/Ellipse2.png");
-  background-repeat: no-repeat;
-  height: 40px;
-  width: 50px;
-}
-
-.bottom-ellipse {
-  background-image: url("img/Ellipse1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 237px;
-  top: 600.1px;
-  background: #6070ff;
-  border-radius: 50px;
 }
