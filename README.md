@@ -6,8 +6,8 @@ This project is a replicate of figma mobile template one
 
 ### Getting Started
 
-step1: copy the Url from my github account
-step2: clone it to your local machine using
+step1. copy the Url from my github account
+step2. clone it to your local machine using
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ HTML and CSS
 
 ### Live Demo
 
-**Link** <http://127.0.0.1:5500/index.html>
+**Link:** <http://127.0.0.1:5500/index.html>
 
 ### Author
 
