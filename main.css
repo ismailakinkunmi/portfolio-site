@@ -5,21 +5,16 @@
   box-sizing: border-box;
 }
 
-/* body section */
-body {
-  height: 718px;
-  width: 375px;
-  left: 0px;
-  top: 0px;
-  border-radius: [object Object]px;
-}
-
 /* header section */
 .header-section {
   display: flex;
   flex-direction: row;
   column-gap: 17em;
   padding: 10px 12px;
+}
+
+.logo a {
+  text-decoration: none;
 }
 
 .main-section {
