@@ -1,6 +1,6 @@
-# Portfolio-mobile
+# Portfolio-Setup
 
-## Portfolio Setup
+## Portfolio Setup Project
 
 This project is a replicate of figma mobile template one
 
