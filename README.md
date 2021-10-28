@@ -6,8 +6,8 @@ This project is a replicate of figma mobile template one
 
 ### Getting Started
 
-step1. copy the Url from my github account
-step2. clone it to your local machine using
+1. copy the Url from my github account
+2. clone it to your local machine using
 
 ### Prerequisites
 
@@ -39,4 +39,8 @@ HTML and CSS
 
 ### Acknowledgments
 
-Hat tip to my coding partners and code reviewer for their contribution.
+Hat tip to my coding partners and code reviewer for their contribution
+
+### License
+
+This project is MIT licensed
