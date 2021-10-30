@@ -169,8 +169,7 @@ body {
 
 .tonic-section1 .css,
 .multipurpose-section1 .css,
-.post-sectio n .css,
-.stories-section .css {
+.stories-section .css .post-section .css {
   background-color: #ebebff;
   margin-right: 8px;
   color: blue;
@@ -271,7 +270,7 @@ body {
   width: 295px;
   height: 220px;
   border-radius: 8px;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 /* about section------------------- */
@@ -306,7 +305,6 @@ body {
 .about-section .connect {
   width: 200px;
   height: 24px;
-  padding-left: 0px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -339,7 +337,7 @@ body {
   width: 300px;
   height: 50px;
   margin: 10px 0;
-  background: #ffffff;
+  background: #fff;
 }
 
 .langguage h5 {
@@ -390,11 +388,7 @@ body {
   flex-direction: row;
   position: static;
   border-radius: 8px;
-  position: static;
   width: 303px;
-  height: 66.72px;
-  left: 12px;
-  top: 12px;
   background: #f7f7f9;
   margin-bottom: 5px;
 }
@@ -458,6 +452,7 @@ body {
   height: 48px;
   padding: 10px;
 }
+
 .contact-section input,
 .contact-section textarea {
   width: 273px;
