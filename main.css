@@ -79,7 +79,7 @@ body {
   height: 552px;
   left: calc(50% - 327px / 2);
   top: 1438px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -153,6 +153,7 @@ body {
   line-height: 16px;
   color: #7a869a;
 }
+
 .tonic-section1 .daily-sign,
 .multipurpose-section1 .daily-sign,
 .post-section .daily-sign,
@@ -265,11 +266,12 @@ body {
   height: 552px;
   left: calc(50% - 327px / 2);
   top: 1438px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
 }
+
 .post-section .image {
   background-image: url("img/Snapshoot\ Portfolio\ \(2\).png");
   width: 295px;
@@ -294,6 +296,7 @@ body {
   background-color: #fff;
   margin: 88px 0;
 }
+
 .stories-section .image {
   background-image: url("img/Snapshoot\ Portfolio\ \(3\).png");
   position: static;
@@ -304,6 +307,7 @@ body {
   border-radius: 8px;
   margin: 12px 0px;
 }
+
 /* about section------------------- */
 .about-section {
   position: static;
@@ -313,6 +317,7 @@ body {
   left: 375px;
   top: 4769px;
 }
+
 .about-section h2 {
   position: static;
   width: 327px;
@@ -343,6 +348,7 @@ body {
   color: #344563;
   margin: 12px 0;
 }
+
 .about-section .connect {
   position: static;
   width: 200px;
@@ -355,6 +361,7 @@ body {
   color: #7f8cff;
   margin: 10px 0;
 }
+
 .about-section .resume {
   position: static;
   width: 200px;
@@ -372,9 +379,11 @@ body {
   color: #396df2;
   margin: 20px 10px;
 }
+
 .about-section .social-icons {
   padding: 0 20px 0 0;
 }
+
 .about-section .langguage {
   position: static;
   display: flex;
@@ -410,6 +419,7 @@ body {
   top: 12px;
   margin-bottom: 5px;
 }
+
 .javascript p,
 html p,
 css p {
@@ -422,12 +432,14 @@ css p {
   color: #253858;
   padding-top: 8px;
 }
+
 .javascript img,
 .html img,
 .css img {
   height: 46.72px;
   margin: 10px;
 }
+
 .framework,
 .skill {
   display: flex;
@@ -442,6 +454,7 @@ css p {
   background: #f7f7f9;
   margin-bottom: 5px;
 }
+
 .framework h5,
 .skill h5 {
   width: 235px;
@@ -459,6 +472,7 @@ css p {
   width: 50px;
   margin: 25px;
 }
+
 .icon-down {
   background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
   background-repeat: no-repeat;
@@ -497,7 +511,7 @@ css p {
 }
 
 .contact-section input {
-  background: #ffffff;
+  background: #fff;
   height: 48px;
   width: 273px;
   margin: 10px;
@@ -511,7 +525,7 @@ css p {
 .contact-section textarea {
   height: 127px;
   width: 273px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 20px;
@@ -522,7 +536,7 @@ css p {
   width: 140px;
   height: 48px;
   padding: 12px 16px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   margin: 5px 24px;
 }
