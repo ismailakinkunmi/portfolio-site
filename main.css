@@ -1,3 +1,4 @@
+
 /* basic setup */
 * {
   padding: 0;
@@ -94,8 +95,6 @@ body {
   background-image: url("img/Snapshoot\ Portfolio.png");
   border-radius: 8px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 12px 0px;
 }
 .tonic-section1 h2,
