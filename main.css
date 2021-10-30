@@ -86,14 +86,10 @@ body {
 }
 
 .tonic-section1 .tonic-image1 {
-  position: static;
   width: 295px;
   height: 220px;
-  left: 16px;
-  top: 16px;
   background-image: url("img/Snapshoot\ Portfolio.png");
   border-radius: 8px;
-  flex: none;
   margin: 12px 0px;
 }
 .tonic-section1 h2,
@@ -120,12 +116,8 @@ body {
 .multipurpose-section1 .canopy,
 .post-section .canopy,
 .stories-section .canopy {
-  position: static;
-  padding-left: 0;
   width: 55px;
   height: 16px;
-  left: 0px;
-  top: 8px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -138,13 +130,8 @@ body {
 .multipurpose-section1 .dev,
 .post-section .dev,
 .stories-section .dev {
-  position: static;
   width: 88px;
   height: 16px;
-  left: 0px;
-  top: 8px;
-
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -156,12 +143,8 @@ body {
 .multipurpose-section1 .daily-sign,
 .post-section .daily-sign,
 .stories-section .daily-sign {
-  position: static;
   width: 295px;
   height: 76px;
-  left: 0px;
-  right: 10px;
-  top: 92px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -218,7 +201,6 @@ body {
 .multipurpose-section1 .see-project,
 .post-section .see-project,
 .stories-section .see-project {
-  position: static;
   height: 24px;
   width: 100px;
   margin: 12px;
@@ -238,19 +220,13 @@ body {
 .multipurpose-section1 {
   height: 596px;
   width: 327px;
-  left: 24px;
-  top: 754px;
   border-radius: 16px;
   padding: 16px;
 }
 
 .multipurpose-section1 .image {
-  position: static;
   width: 295px;
   height: 220px;
-  left: 16px;
-  top: 16px;
-
   background-image: url("img/Snapshoot\ Portfolio\ \(1\).png");
   border-radius: 8px;
 }
@@ -259,11 +235,9 @@ body {
 .post-section {
   align-items: center;
   padding: 16px;
-  position: static;
   width: 327px;
   height: 552px;
   left: calc(50% - 327px / 2);
-  top: 1438px;
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -274,8 +248,6 @@ body {
   background-image: url("img/Snapshoot\ Portfolio\ \(2\).png");
   width: 295px;
   height: 220px;
-  left: 16px;
-  top: 16px;
   border-radius: 8px;
   margin: 12px 0;
 }
@@ -283,7 +255,6 @@ body {
 /* stories-section-------------------- */
 
 .stories-section {
-  position: static;
   align-items: center;
   padding: 16px;
   width: 327px;
@@ -297,48 +268,33 @@ body {
 
 .stories-section .image {
   background-image: url("img/Snapshoot\ Portfolio\ \(3\).png");
-  position: static;
   width: 295px;
   height: 220px;
-  left: 16px;
-  top: 16px;
   border-radius: 8px;
   margin: 12px 0px;
 }
 
 /* about section------------------- */
 .about-section {
-  position: static;
   width: 375px;
   height: 880px;
   padding: 10px;
-  left: 375px;
-  top: 4769px;
 }
 
 .about-section h2 {
-  position: static;
   width: 327px;
   height: 101px;
-  left: 0px;
-  top: 0px;
-  font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   color: #172b4d;
   margin: 12px 0;
 }
 
 .about-section p {
-  position: static;
   width: 327px;
   height: 144px;
-  left: 0px;
-  top: 113px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -348,7 +304,6 @@ body {
 }
 
 .about-section .connect {
-  position: static;
   width: 200px;
   height: 24px;
   padding-left: 0px;
@@ -361,16 +316,12 @@ body {
 }
 
 .about-section .resume {
-  position: static;
   width: 200px;
   height: 24px;
-  left: 12px;
-  top: 12px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
@@ -383,7 +334,6 @@ body {
 }
 
 .about-section .langguage {
-  position: static;
   display: flex;
   flex-direction: row;
   width: 300px;
@@ -397,7 +347,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   width: 230px;
   padding: 10px;
@@ -406,15 +355,12 @@ body {
 .about-section .html,
 .about-section .css,
 .about-section .javascript {
-  position: static;
   display: flex;
   flex-direction: row;
   background: #f7f7f9;
   border-radius: 8px;
   width: 303px;
   height: 66.72px;
-  left: 12px;
-  top: 12px;
   margin-bottom: 5px;
 }
 
@@ -509,23 +455,21 @@ body {
 }
 
 .contact-section input {
-  background: #fff;
   height: 48px;
-  width: 273px;
-  border-radius: 8px;
-  border: 1px solid #cfd8dc;
   padding: 10px;
+}
+.contact-section input,
+.contact-section textarea {
+  width: 273px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
   margin: 5px 24px;
 }
 
 .contact-section textarea {
   height: 127px;
-  width: 273px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
   padding: 20px;
-  margin: 5px 24px;
 }
 
 .contact-section button {
