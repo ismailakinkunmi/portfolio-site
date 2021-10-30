@@ -90,19 +90,17 @@ body {
   height: 220px;
   background-image: url("img/Snapshoot\ Portfolio.png");
   border-radius: 8px;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
+
 .tonic-section1 h2,
 .multipurpose-section1 h2,
 .post-section h2,
 .stories-section h2 {
-  position: static;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .tonic-section1 .canopies,
@@ -118,7 +116,6 @@ body {
 .stories-section .canopy {
   width: 55px;
   height: 16px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -150,12 +147,13 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .tonic-section1 .html,
 .multipurpose-section1 .html,
-.post-section .html .stories-section .html {
+.post-section .html,
+.stories-section .html {
   background-color: #ebebff;
   margin-right: 8px;
   color: blue;
@@ -169,7 +167,8 @@ body {
 
 .tonic-section1 .css,
 .multipurpose-section1 .css,
-.stories-section .css .post-section .css {
+.stories-section .css,
+.post-section .css {
   background-color: #ebebff;
   margin-right: 8px;
   color: blue;
