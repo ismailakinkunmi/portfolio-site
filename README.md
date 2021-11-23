@@ -29,7 +29,7 @@ HTML and CSS
 
 #### Live Demo
 
-**Link:** <http://127.0.0.1:5500/index.html>
+This site was built using [GitHub Pages](http://127.0.0.1:5500/index.html/).
 
 #### Author
 
@@ -40,6 +40,14 @@ HTML and CSS
 
 Hat tip to my coding partners and code reviewer for their contribution
 
-#### License
+##### Show your support
+
+give a thumb 👍 if you like this project
+
+##### Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+##### License
 
 This project is MIT licensed
