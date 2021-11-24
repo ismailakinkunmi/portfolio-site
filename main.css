@@ -62,7 +62,7 @@
   padding-right: 60px;
 }
 
-.let-container {
+.let-section {
   display: flex;
   width: 300px;
   justify-content: space-between;
@@ -90,7 +90,7 @@
 /* social media icons  */
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 13px;
   margin-top: 15px;
   padding-left: 20px;
 }
