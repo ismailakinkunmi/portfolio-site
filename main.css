@@ -24,7 +24,6 @@
 
 .logo {
   text-decoration: none;
-  font-style: bold;
   font-size: 18px;
 }
 
@@ -99,6 +98,7 @@
   list-style: none;
   font-size: 1.3em;
 }
+
 .eclipse-4 {
   width: 220px;
   margin-top: 35px;
