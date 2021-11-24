@@ -33,8 +33,9 @@ This site was built using [GitHub Pages](http://127.0.0.1:5500/index.html/).
 
 #### Author
 
-1. Github: @<https://github.com/ismailakinkunmi>
-2. LinkedIn: @<https://www.linkedin.com/in/ismail-akinkunmi-adekunle-b810aa155/>
+1. Name: Adekunle Akinkunmi Ismail
+2. Github: @<https://github.com/ismailakinkunmi>
+3. LinkedIn: @<https://www.linkedin.com/in/ismail-akinkunmi-adekunle-b810aa155/>
 
 #### Acknowledgments
 
