@@ -1,10 +1,9 @@
-# Portfolio-Setup
+# headline Project
 
-## Portfolio Setup Project
+## headline Project Screenshot
 
 This project is a replicate of the figma mobile template one
 ![Screenshot (39)](https://user-images.githubusercontent.com/37457094/143147781-cd7f7089-e0d6-40be-a6e6-90d611445df6.png)
-
 
 ### Getting Started
 

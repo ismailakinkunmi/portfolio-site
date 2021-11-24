@@ -4,10 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* container */
 .headers-section {
   background-color: #fff;
-  height: 715px;
+  height: 720px;
   width: 375px;
 }
 
@@ -96,7 +96,7 @@
 }
 .eclipse-4 {
   width: 220px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .eclipse-4 img {
