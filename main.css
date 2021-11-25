@@ -143,6 +143,7 @@
   margin: 12px 0;
 }
 
+
 /* about section------------------- */
 .about-section {
   width: 375px;
@@ -185,6 +186,9 @@
 }
 
 .social-icons {
+
+/* toolbar section */
+.toolbar-section {
   display: flex;
   flex-direction: row;
   list-style: none;
