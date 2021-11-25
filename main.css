@@ -12,6 +12,7 @@
   background: #e5e5e5;
 }
 
+/* ---------------------------------------tonic-sections------------------------------ */
 .tonic-section {
   display: flex;
   flex-direction: column;
@@ -22,20 +23,41 @@
   left: calc(50% - 327px / 2);
   top: 114px;
   background-color: #ffffff;
-  border: 1px solid #dfe1e6;
   box-sizing: border-box;
-  border-radius: 16px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.tonic-section .tonic-image1 {
+.tonic-section,
+.post-section,
+.stories-section {
+  border: 1px solid #dfe1e6;
+}
+
+.tonic-section,
+.see-project,
+.multipurpose-section,
+.post-section,
+.stories-section {
+  border-radius: 16px;
+}
+
+.tonic-image {
   width: 295px;
   height: 220px;
   background-image: url("img/Snapshoot\ Portfolio.png");
-  border-radius: 8px;
   margin: 12px 0;
+}
+
+.tonic-image,
+.multipurpose-image,
+.postsection-image,
+.major-lang,
+.contactsection-button,
+.contactsection-input,
+.contactsection-textarea {
+  border-radius: 8px;
 }
 
 .tonic {
@@ -45,18 +67,16 @@
   line-height: 44px;
 }
 
-.tonic-section .canopies,
-.multipurpose-section .canopies,
-.post-section .canopies,
-.stories-section .canopies {
+.canopy-container {
+  display: flex;
+  flex-direction: row;
   width: 295px;
+  height: 30px;
+  gap: 5px;
+  padding-top: 10px;
 }
 
-.tonic-section .dev,
-.multipurpose-section .dev,
-.post-section .dev,
-.stories-section .dev {
-  width: 88px;
+.date {
   height: 16px;
   font-style: normal;
   font-weight: 600;
@@ -65,41 +85,118 @@
   color: #7a869a;
 }
 
-.tonic-section .see-project,
-.multipurpose-section .see-project,
-.post-section .see-project,
-.stories-section .see-project {
+.daily-sign {
+  width: 295px;
+  height: 76px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 20px;
+  width: 295px;
+  list-style: none;
+}
+
+.html,
+.css {
+  background-color: #ebebff;
+  margin-right: 8px;
+  color: #6070ff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.css {
+  font-size: 12px;
+}
+
+.javascript {
+  position: static;
+  width: 65px;
+  height: 16px;
+  left: 12px;
+  top: 4px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.see-project {
+  position: static;
+  width: 250px;
   height: 24px;
-  width: 100px;
-  margin: 12px;
-  border-radius: 10px;
   left: 12px;
   top: 12px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
+  flex: none;
+  margin: 10px 0px;
 }
 
-/* multipurpose section */
+.btn {
+  height: 24px;
+  width: 100px;
+  margin: 12px 0;
+  border-radius: 10px;
+  left: 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: hsl(223, 88%, 59%);
+}
+
+.btn:hover,
+.resume:hover {
+  background-color: #7a869a;
+}
+
+.btn:active,
+.resume:active {
+  background-color: #000;
+}
+
+/*------------------------------- multipurpose section -----------------------------------*/
 .multipurpose-section {
   height: 596px;
   width: 327px;
-  border-radius: 16px;
   padding: 16px;
   background: #fff;
   margin: 80px 0;
 }
 
-.multipurpose-section .image {
+.multipurpose-image {
   width: 295px;
   height: 220px;
   background-image: url("img/Snapshoot\ Portfolio\ \(1\).png");
-  border-radius: 8px;
 }
 
-/* multipost section -----------------------  */
+/* ------------------------------post section -----------------------  */
 .post-section {
   align-items: center;
   padding: 16px;
@@ -107,12 +204,10 @@
   height: 552px;
   left: calc(50% - 327px / 2);
   background: #fff;
-  border: 1px solid #dfe1e6;
   box-sizing: border-box;
-  border-radius: 16px;
 }
 
-.post-section .image {
+.postsection-image {
   background-image: url("img/Snapshoot\ Portfolio\ \(2\).png");
   width: 295px;
   height: 220px;
@@ -126,21 +221,18 @@
   width: 327px;
   height: 596px;
   box-sizing: border-box;
-  border-radius: 16px;
-  border: 1px solid #dfe1e6;
   background-color: #fff;
   margin: 88px 0;
 }
 
-.stories-section .image {
+.storysection-image {
   background-image: url("img/Snapshoot\ Portfolio\ \(3\).png");
   width: 295px;
   height: 220px;
-  border-radius: 8px;
   margin: 12px 0;
 }
 
-/* about section------------------- */
+/*--------------------- about section------------------- */
 .about-section {
   width: 375px;
   height: 1263px;
@@ -148,7 +240,7 @@
   background: #ffffff;
 }
 
-.about-section h2 {
+.myself {
   width: 327px;
   height: 101px;
   font-style: normal;
@@ -159,7 +251,7 @@
   margin: 12px 0;
 }
 
-.about-section p {
+.career {
   width: 327px;
   height: 144px;
   font-style: normal;
@@ -170,7 +262,7 @@
   margin: 12px 0;
 }
 
-.about-section .connect {
+.connect {
   width: 200px;
   height: 24px;
   font-style: normal;
@@ -190,16 +282,45 @@
   padding-left: 20px;
 }
 
-.about-section .langguage {
+.resume {
+  width: 150px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin: 10px 10px;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.language-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.langguage,
+.major-lang {
   display: flex;
   flex-direction: row;
   width: 300px;
+  margin: 12px 0;
+}
+
+.langguage {
+  justify-content: space-between;
   height: 50px;
   margin: 10px 0;
   background: #fff;
 }
 
-.langguage h5 {
+.icondown-language {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -209,50 +330,9 @@
   padding: 10px;
 }
 
-.javascript-lang,
-.html-lang,
-.css-lang,
-.framework,
-.skill {
-  display: flex;
-  flex-direction: row;
+.major-lang {
+  height: 66.72px;
   background: #f7f7f9;
-}
-
-.html-lang p,
-.css-lang p,
-.javascript-lang p {
-  align-items: center;
-  margin: 20px 10px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  padding-top: 8px;
-}
-
-.javascript-lang img,
-.html-lang img,
-.css-lang img {
-  height: 46.72px;
-  margin: 10px;
-}
-
-.framework h5,
-.skill h5 {
-  width: 235px;
-  margin: 25px;
-  font-size: 20px;
-}
-
-.about-section .icon-right {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
-  background-repeat: no-repeat;
-  padding-top: 20px;
-  height: 50px;
-  width: 50px;
-  margin: 25px;
 }
 
 .icon-down {
@@ -263,7 +343,38 @@
   margin: 10px;
 }
 
-/* ------------contact me section----------------- */
+.eclipse-language {
+  height: 46.72px;
+  margin: 10px;
+}
+
+.technology-language {
+  align-items: center;
+  margin: 20px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  padding-top: 8px;
+}
+
+.about-h5 {
+  width: 235px;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.icon-right {
+  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  height: 50px;
+  width: 50px;
+  margin: 25px;
+}
+
+/* ------------contact-section----------------- */
 .contact-section {
   padding-top: 40px;
   width: 375px;
@@ -273,7 +384,7 @@
   background-image: url("img/header-shapes\ mobile.png");
 }
 
-.contact-section h6 {
+.contact-me {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -282,7 +393,7 @@
   color: #fff;
 }
 
-.contact-section p {
+.apply {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -291,17 +402,23 @@
   margin: 5px 24px;
 }
 
-.contact-section input {
+.contactsection-input {
   height: 48px;
   padding: 10px;
 }
 
-.contact-section input,
-.contact-section textarea {
+.contactsection-input,
+.contactsection-textarea {
   width: 273px;
   background: #fff;
   border: 1px solid #cfd8dc;
   margin: 5px 24px;
+}
+
+.contactsection-input,
+.contactsection-textarea,
+.contactsection-button {
+  background: #fff;
 }
 
 .contact-section textarea {
@@ -309,11 +426,10 @@
   padding: 20px;
 }
 
-.contact-section button {
+.contactsection-button {
   width: 140px;
   height: 48px;
   padding: 12px 16px;
-  background: #fff;
   margin: 5px 24px;
 }
 
