@@ -20,7 +20,7 @@
   width: 327px;
   height: 552px;
   left: calc(50% - 327px / 2);
-  background-color: #ffffff;
+  background-color: #fff;
   box-sizing: border-box;
   flex: none;
   order: 0;
@@ -124,7 +124,6 @@
   position: static;
   width: 65px;
   height: 16px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -230,7 +229,7 @@
   width: 375px;
   height: 1263px;
   padding: 10px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .myself {
@@ -287,7 +286,7 @@
   letter-spacing: 0.03em;
   color: #396df2;
   margin: 10px 10px;
-  border: 2px solid #555555;
+  border: 2px solid #555;
   border-radius: 5px;
   padding: 3px;
 }
