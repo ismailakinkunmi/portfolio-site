@@ -54,7 +54,7 @@
 .major-lang,
 .contactsection-button,
 .contactsection-input,
-.contactsection-textarea {
+.contact-section textarea {
   border-radius: 8px;
 }
 
@@ -142,7 +142,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   flex: none;
   margin: 10px 0px;
   top: 4px;
@@ -403,17 +402,17 @@
 }
 
 .contactsection-input,
-.contactsection-textarea,
+.contact-section textarea,
 .contactsection-button {
   background: #fff;
 }
 
-.contactsection-textarea {
+.contact-section textarea {
   height: 127px;
   width: 273px;
   border: 1px solid #cfd8dc;
   margin: 5px 24px;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .contactsection-button {
