@@ -7,7 +7,6 @@
 
 /* ---------------------------------------middle-sections------------------------------ */
 .middle-section {
-  display: grid;
   height: 4119px;
   background: #e5e5e5;
 }
@@ -21,7 +20,6 @@
   width: 327px;
   height: 552px;
   left: calc(50% - 327px / 2);
-  top: 114px;
   background-color: #ffffff;
   box-sizing: border-box;
   flex: none;
@@ -126,8 +124,6 @@
   position: static;
   width: 65px;
   height: 16px;
-  left: 12px;
-  top: 4px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -138,21 +134,19 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
 }
 
 .see-project {
   position: static;
   width: 250px;
   height: 24px;
-  left: 12px;
-  top: 12px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   flex: none;
   margin: 10px 0px;
+  top: 4px;
 }
 
 .btn {
@@ -160,7 +154,6 @@
   width: 100px;
   margin: 12px 0;
   border-radius: 10px;
-  left: 12px;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -407,10 +400,8 @@
   padding: 10px;
 }
 
-.contactsection-input,
-.contactsection-textarea {
+.contactsection-input {
   width: 273px;
-  background: #fff;
   border: 1px solid #cfd8dc;
   margin: 5px 24px;
 }
@@ -421,8 +412,11 @@
   background: #fff;
 }
 
-.contact-section textarea {
+.contactsection-textarea {
   height: 127px;
+  width: 273px;
+  border: 1px solid #cfd8dc;
+  margin: 5px 24px;
   padding: 20px;
 }
 
