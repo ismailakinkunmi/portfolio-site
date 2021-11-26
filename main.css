@@ -163,17 +163,7 @@
   color: hsl(223, 88%, 59%);
 }
 
-.btn:hover,
-.resume:hover {
-  background-color: #7a869a;
-}
-
-.btn:active,
-.resume:active {
-  background-color: #000;
-}
-
-/*------------------------------- multipurpose section -----------------------------------*/
+/*------------------------------- multipurpose section ----------------------------------- */
 .multipurpose-section {
   height: 596px;
   width: 327px;
@@ -188,7 +178,7 @@
   background-image: url("img/Snapshoot\ Portfolio\ \(1\).png");
 }
 
-/* ------------------------------post section -----------------------  */
+/* ------------------------------ post section -----------------------  */
 .post-section {
   align-items: center;
   padding: 16px;
@@ -224,7 +214,7 @@
   margin: 12px 0;
 }
 
-/*--------------------- about section------------------- */
+/* about section */
 .about-section {
   width: 375px;
   height: 1263px;
@@ -289,6 +279,16 @@
   border: 2px solid #555;
   border-radius: 5px;
   padding: 3px;
+}
+
+.btn:hover,
+.resume:hover {
+  background-color: #7a869a;
+}
+
+.btn:active,
+.resume:active {
+  background-color: #000;
 }
 
 .language-list {
@@ -397,9 +397,6 @@
 .contactsection-input {
   height: 48px;
   padding: 10px;
-}
-
-.contactsection-input {
   width: 273px;
   border: 1px solid #cfd8dc;
   margin: 5px 24px;
