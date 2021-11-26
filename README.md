@@ -1,6 +1,6 @@
 # Portfolio-Setup
 
-## Portfolio Setup Project
+## Portfolio Setup
 
 This project is a replicate of figma mobile template one
 
@@ -14,7 +14,7 @@ This project is a replicate of figma mobile template one
 1. Setup
 2. Install
 3. Usage
-4. Tun tests
+4. Run tests
 5. Deployment
 
 ### Built With
