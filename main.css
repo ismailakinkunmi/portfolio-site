@@ -5,27 +5,37 @@
   box-sizing: border-box;
 }
 
-body {
+/* container */
+.headers-section {
   background-color: #fff;
+  height: 720px;
+  width: 375px;
 }
 
 /* toolbar section */
 .toolbar-section {
+  height: 100px;
   display: flex;
+  width: 375px;
   flex-direction: row;
-  column-gap: 17em;
+  justify-content: space-between;
   padding: 10px 12px 0 20px;
 }
 
-.logo a {
+.logo {
   text-decoration: none;
+  font-size: 18px;
 }
 
-.main-section {
+.menu-logo {
+  font-size: 30px;
+}
+
+.headline-section {
   background-image: url("img/header-shapes mobile.png");
   background-repeat: no-repeat;
-  height: 587.1460571289062px;
-  width: 462px;
+  height: 400px;
+  width: 375px;
   left: -34px;
 }
 
@@ -41,14 +51,22 @@ body {
   font-style: normal;
   font-weight: 700;
   text-align: left;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .article {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  padding-right: 120px;
+  padding-right: 60px;
+}
+
+.let-section {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  height: 13px;
+  margin-top: 15px;
 }
 
 .connect {
@@ -59,12 +77,34 @@ body {
   text-align: left;
 }
 
-/* social media icons  */
-.social-icons {
-  padding: 20px;
+.eclipse-13 {
+  width: 300px;
+  height: 12px;
 }
 
-.social-icons .iconify {
-  padding: 0 5px;
-  font-size: 2em;
+.eclipse-13 img {
+  float: right;
+}
+
+/* social media icons  */
+.social-icons {
+  display: flex;
+  gap: 13px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+  font-size: 1.3em;
+}
+
+.eclipse-4 {
+  width: 220px;
+  margin-top: 35px;
+}
+
+.eclipse-4 img {
+  height: 12px;
+  float: right;
 }
