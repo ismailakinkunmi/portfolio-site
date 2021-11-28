@@ -161,20 +161,6 @@
   margin: 0;
 }
 
-.html:hover,
-.css:hover,
-.javascript:hover {
-  background: #396df2dc;
-  color: #fff;
-}
-
-.html:active,
-.css:active,
-.javascript:active {
-  background: #00f;
-  color: #fff;
-}
-
 .javascript {
   position: static;
   width: 70px;
@@ -195,11 +181,24 @@
   margin: 0;
 }
 
+.html:hover,
+.css:hover,
+.javascript:hover {
+  background: #396df2dc;
+  color: #fff;
+}
+
+.html:active,
+.css:active,
+.javascript:active {
+  background: #00f;
+  color: #fff;
+}
+
 .btn {
   position: static;
   left: 12px;
   top: 12px;
-  aspect-ratio: auto 56 / 24;
   height: 44px;
   width: 100px;
   margin: 12px 0;
@@ -221,6 +220,7 @@
   order: 0;
   flex-grow: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -239,6 +239,7 @@ a {
 .multipurpose-image {
   background-image: url("img/Snapshoot\ Portfolio\ \(1\).png");
 }
+
 .multi-Post {
   position: static;
   width: 295px;
