@@ -9,7 +9,7 @@ About myself section placed after the projects and before the contact form.
 
 ### Getting Started
 
-1. copy the Url from my github account
+1. copy the Url from my github account or below
 2. clone the below url to your local machine
 3. git@github.com:ismailakinkunmi/portfolio-site.git
 
