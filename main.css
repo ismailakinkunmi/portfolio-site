@@ -69,7 +69,8 @@
   height: 36px;
   left: 0;
   top: 0;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
@@ -95,7 +96,7 @@
   height: 16px;
   left: 0;
   top: 8px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -120,7 +121,7 @@
   position: static;
   width: 295px;
   height: 76px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -148,7 +149,7 @@
   height: 24px;
   left: 12px;
   top: 4px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -167,7 +168,7 @@
   height: 24px;
   left: 12px;
   top: 4px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   text-align: center;
   font-weight: 500;
@@ -204,7 +205,7 @@
   margin: 12px 0;
   border: 1px solid #396df2;
   border-radius: 10px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -246,7 +247,7 @@ a {
   height: 80px;
   left: 0;
   top: 0;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -305,7 +306,7 @@ a {
 .myself {
   width: 327px;
   height: 101px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   line-height: 52px;
@@ -324,7 +325,7 @@ a {
   left: 0;
   font-size: 16px;
   top: 113px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 24px;
   color: #344563;
@@ -340,7 +341,7 @@ a {
   top: 0;
   width: 200px;
   height: 24px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -380,6 +381,7 @@ a {
 .resume:link {
   color: #00f;
 }
+
 .resume:visited {
   color: #ffc0cf;
 }
