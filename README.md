@@ -5,6 +5,8 @@
 This project is a replicate of the Figma template 1 mobile version from work section to
 About myself section placed after the projects and before the contact form.
 
+![Screenshot (42)](https://user-images.githubusercontent.com/37457094/143763222-d55d0dca-17fb-4ca2-9f4e-d03b17b44877.png)
+
 ### Getting Started
 
 1. copy the Url from my github account
