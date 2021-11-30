@@ -71,10 +71,7 @@ body {
   position: static;
   width: 295px;
   height: 36px;
-  left: 0;
-  top: 0;
   font-weight: bold;
-  font-style: normal;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
@@ -97,10 +94,7 @@ body {
   position: static;
   width: 55px;
   height: 16px;
-  left: 0;
   top: 8px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -113,7 +107,6 @@ body {
 
 .date {
   height: 16px;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -124,9 +117,6 @@ body {
   position: static;
   width: 295px;
   height: 76px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -152,8 +142,6 @@ body {
   height: 24px;
   left: 12px;
   top: 4px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -171,13 +159,10 @@ body {
   height: 24px;
   left: 12px;
   top: 4px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   text-align: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   color: #6070ff;
   flex: none;
   order: 0;
@@ -208,9 +193,7 @@ body {
   margin: 12px 0;
   border: 1px solid #396df2;
   border-radius: 10px;
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   background: #fff;
   padding-left: 5px;
@@ -248,10 +231,6 @@ a {
   position: static;
   width: 295px;
   height: 80px;
-  left: 0;
-  top: 0;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
@@ -309,8 +288,6 @@ a {
 .myself {
   width: 327px;
   height: 101px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-size: 40px;
   line-height: 52px;
   align-items: center;
@@ -327,8 +304,6 @@ a {
   left: 0;
   font-size: 16px;
   top: 113px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   line-height: 24px;
   color: #344563;
   flex: none;
@@ -339,12 +314,8 @@ a {
 
 .connect {
   position: static;
-  left: 0;
-  top: 0;
   width: 200px;
   height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -366,13 +337,11 @@ a {
 .resume {
   width: 150px;
   height: 40px;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #396df2;
   margin: 10px 0;
   border: 2px solid #555;
@@ -423,7 +392,6 @@ a {
 
 .icondown-language {
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
@@ -452,7 +420,6 @@ a {
 .technology-language {
   align-items: center;
   margin: 20px 10px;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -474,6 +441,7 @@ a {
   width: 50px;
   margin: 25px;
 }
+
 /* form-section */
 .form-section {
   background: #6070ff;
@@ -504,6 +472,7 @@ a {
 }
 
 .form-section input {
+  font-family: "Poppins", sans-serif;
   height: 48px;
   width: 327px;
   padding: 15px;
