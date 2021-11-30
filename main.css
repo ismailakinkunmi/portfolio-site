@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .headers-section {
   background-color: #fff;
   height: 600px;
@@ -74,6 +75,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+  color: #7f8cff;
 }
 
 .eclipse-13 {
@@ -85,11 +87,12 @@ body {
   float: right;
 }
 
-/* social media icons  */
 .social-icons {
   display: flex;
-  gap: 13px;
-  margin-top: 15px;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  margin: 8px 0;
   padding-left: 20px;
 }
 
@@ -411,28 +414,6 @@ a {
   margin: 8px 0;
 }
 
-.connect {
-  position: static;
-  width: 200px;
-  height: 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 20px;
-  margin: 8px 0;
-  padding-left: 20px;
-}
-
 .resume {
   width: 150px;
   height: 40px;
@@ -563,6 +544,7 @@ a {
   color: #fff;
   margin-bottom: 5px;
 }
+
 .contact-me,
 .apply,
 .form-section button {
@@ -602,8 +584,6 @@ a {
   border-radius: 8px;
   padding: 12px 16px;
   color: #6070ff;
-  background: #fff;
-  border: none;
   margin-top: 10px;
   border: 1px solid #fff;
   cursor: pointer;
