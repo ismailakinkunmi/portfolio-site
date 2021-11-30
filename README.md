@@ -20,14 +20,13 @@ the contact form.
 
 #### Built With
 
-HTML and CSS
+HTML & CSS
 
 #### technology used
 
 1. Linters
 2. VScode
-3. html and css3
-4. Git and github
+3. Git & github
 
 #### Live Demo
 
