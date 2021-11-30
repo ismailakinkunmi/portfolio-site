@@ -1,20 +1,23 @@
-# headline Project
+# portfolio-setup
 
-## headline Project Screenshot
+## portfolio-setup Project
 
-This project is a replicate of the figma mobile template one
-![Screenshot (39)](https://user-images.githubusercontent.com/37457094/143147781-cd7f7089-e0d6-40be-a6e6-90d611445df6.png)
+This project is a replicate of the Figma template 1 mobile version from work section to
+About myself section placed after the projects and before the contact form.
+
+![Screenshot (42)](https://user-images.githubusercontent.com/37457094/143763222-d55d0dca-17fb-4ca2-9f4e-d03b17b44877.png)
 
 ### Getting Started
 
 1. copy the Url from my github account
-2. clone it to your local machine
+2. clone the below url to your local machine
+3. git@github.com:ismailakinkunmi/portfolio-site.git
 
 #### Prerequisites
 
 1. Setup
 2. Install
-3. Run tests
+3. Usage
 4. Deployment
 
 #### Built With
@@ -42,13 +45,13 @@ This site was built using [GitHub Pages](http://127.0.0.1:5500/index.html/).
 
 Hat tip to my coding partners and code reviewer for their contribution
 
-##### Show your support
-
-give a thumb 👍 if you like this project
-
-##### Contributing
+#### Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+#### Show your support
+
+give a thumb 👍 if you like this project
 
 ##### License
 
