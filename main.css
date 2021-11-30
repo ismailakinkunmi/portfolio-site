@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .headers-section {
   background-color: #fff;
@@ -145,7 +145,7 @@ body {
 }
 
 .tonic-image {
-  background-image: url("img/Snapshoot\ Portfolio.png");
+  background-image: url('img/Snapshoot\ Portfolio.png');
 }
 
 .tonic-image,
@@ -326,7 +326,7 @@ a {
 }
 
 .multipurpose-image {
-  background-image: url("img/Snapshoot\ Portfolio\ \(1\).png");
+  background-image: url('img/Snapshoot\ Portfolio\ \(1\).png');
 }
 
 .multi-Post {
@@ -355,7 +355,7 @@ a {
 }
 
 .postsection-image {
-  background-image: url("img/Snapshoot\ Portfolio\ \(2\).png");
+  background-image: url('img/Snapshoot\ Portfolio\ \(2\).png');
 }
 
 /* stories-section-------------------- */
@@ -371,7 +371,7 @@ a {
 }
 
 .storysection-image {
-  background-image: url("img/Snapshoot\ Portfolio\ \(3\).png");
+  background-image: url('img/Snapshoot\ Portfolio\ \(3\).png');
 }
 
 /* about section */
@@ -507,7 +507,7 @@ a {
 }
 
 .icon-down {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png');
   background-repeat: no-repeat;
   width: 30px;
   height: 50px;
@@ -536,7 +536,7 @@ a {
 }
 
 .icon-right {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png');
   background-repeat: no-repeat;
   padding-top: 20px;
   height: 50px;
@@ -546,11 +546,17 @@ a {
 
 /* form-section */
 .form-section {
-  background: #6070ff;
-  padding: 45px 24px;
+  background-image: url(./img/contact-form-shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 21px;
+  background-size: contain;
+  background-color: #6070ff;
+  padding: 110px 24px 45px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 60px 0 0 0;
 }
 
 .contact-me {
@@ -574,7 +580,7 @@ a {
 }
 
 .form-section input {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: 48px;
   width: 327px;
   padding: 15px;
@@ -602,4 +608,17 @@ a {
   background: #fff;
   border: none;
   margin-top: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.form-section button:active {
+  background: #2230d2;
+  color: #fff;
+  border-color: #2230d2;
 }
