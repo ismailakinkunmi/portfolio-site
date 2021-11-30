@@ -4,6 +4,9 @@
 
 This project is a replicate of the Figma template 1 mobile version from header section to
 the contact form.
+![Screenshot (49)](https://user-images.githubusercontent.com/37457094/144081535-db565a33-0a84-404f-9124-379059974e40.png)
+![Screenshot (50)](https://user-images.githubusercontent.com/37457094/144081556-fbe50390-ca8c-4e37-9f89-3a69a9ab1c3e.png)
+
 
 ### Getting Started
 
