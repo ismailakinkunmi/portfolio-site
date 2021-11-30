@@ -2,10 +2,8 @@
 
 ## portfolio-setup Project
 
-This project is a replicate of the Figma template 1 mobile version from work section to
-About myself section placed after the projects and before the contact form.
-
-![Screenshot (42)](https://user-images.githubusercontent.com/37457094/143763222-d55d0dca-17fb-4ca2-9f4e-d03b17b44877.png)
+This project is a replicate of the Figma template 1 mobile version from header section to
+the contact form.
 
 ### Getting Started
 
@@ -28,8 +26,8 @@ HTML and CSS
 
 1. Linters
 2. VScode
-3. html & css
-4. github
+3. html and css3
+4. Git and github
 
 #### Live Demo
 
@@ -43,7 +41,7 @@ This site was built using [GitHub Pages](http://127.0.0.1:5500/index.html/).
 
 #### Acknowledgments
 
-Hat tip to my coding partners and code reviewer for their contribution
+Hat tip 👒 to microverse for the opportunity, my coding partners and code reviewer for their contribution.
 
 #### Contributing
 
