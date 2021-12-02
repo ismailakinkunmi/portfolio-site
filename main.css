@@ -139,6 +139,7 @@ body {
 .version li {
   list-style: none;
 }
+
 .tonic-section {
   margin-top: 0;
 }
@@ -159,6 +160,7 @@ body {
 .mobile-images {
   width: 100%;
 }
+
 .desktop-images {
   display: none;
 }
@@ -240,7 +242,6 @@ body {
 
 button {
   width: fit-content;
-  border: 1px solid #396df2;
   border-radius: 5px;
   font-weight: 500;
   font-size: 12px;
@@ -260,7 +261,6 @@ button {
   border-radius: 10px;
   font-size: 17px;
   line-height: 24px;
-  border-radius: 8px;
   padding: 12px;
 }
 
@@ -286,10 +286,6 @@ button:active {
   width: 96px;
 }
 
-.uber-section {
-  margin-bottom: 0;
-}
-
 .uber-car {
   height: 53px;
   padding-right: 23px;
@@ -297,6 +293,7 @@ button:active {
 
 .uber-section {
   gap: 46px;
+  margin-bottom: 0;
 }
 
 .desktop-p {
@@ -454,6 +451,7 @@ button:active {
   height: 25px;
   width: 25px;
 }
+
 .about-skill {
   gap: 288px;
 }
@@ -486,6 +484,7 @@ button:active {
 .form-section button {
   text-align: center;
 }
+
 .apply {
   font-size: 20px;
   line-height: 28px;
