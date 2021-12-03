@@ -21,6 +21,15 @@ body {
   justify-content: space-between;
 }
 
+.my-logo {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+}
+
 .logo-section a {
   text-decoration: none;
 }
@@ -57,7 +66,7 @@ body {
 }
 
 .hero {
-  background-image: url("img/header-shapes\ mobile.png");
+  background-image: url("img/Header\ bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -92,7 +101,8 @@ body {
 }
 
 .dev a,
-.social a {
+.social a,
+.social-career a {
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -360,12 +370,18 @@ button:active {
 }
 
 .resume {
+  width: fit-content;
+  border-radius: 10px;
+  border: 2px solid #396df2;
+  margin: 15px 3px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  align-items: center;
+  padding: 0.8rem;
   text-align: center;
+  background: #fff;
   color: #396df2;
+  font-family: "Poppins", sans-serif;
 }
 
 .language-container {
@@ -501,7 +517,6 @@ footer {
   line-height: 28px;
   color: #ebebff;
   padding-bottom: 30px;
-  width: 50%;
 }
 
 .form-section form {
@@ -578,16 +593,15 @@ footer {
     display: block;
   }
 
-  .hero {
-    background-image: url("img/Header\ bg.png");
-  }
-
   .tonic-section,
   .printing-section,
   .facebook-section,
-  .uber-section,
-  .about-section {
+  .uber-section {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section {
+    grid-template-columns: 40% 60%;
   }
 
   .frontend {
@@ -596,5 +610,9 @@ footer {
 
   .elipse-name {
     flex-direction: row;
+  }
+
+  .apply {
+    width: 50%;
   }
 }
