@@ -388,7 +388,6 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 32px;
 }
 
 .langguage,
@@ -601,7 +600,7 @@ footer {
   }
 
   .about-section {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 50%;
   }
 
   .frontend {
