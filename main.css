@@ -223,14 +223,14 @@ body {
   width: 100%;
 }
 
+.desktop-images {
+  display: none;
+}
+
 .desktop-images:hover,
 .mobile-images {
   transition: transform 0.2s;
   transform: scale(0.95);
-}
-
-.desktop-images {
-  display: none;
 }
 
 .tonic h3,
@@ -553,6 +553,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 50%;
 }
 
 .contact-me {
@@ -574,10 +575,6 @@ footer {
   line-height: 28px;
   color: #ebebff;
   padding-bottom: 30px;
-}
-
-.form-section {
-  width: 50%;
 }
 
 .form-section form {
