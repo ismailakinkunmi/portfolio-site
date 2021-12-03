@@ -274,6 +274,7 @@ button:hover {
   background: #396df2dc;
   color: #fff;
   transform: translateX(px);
+  transition: transform 0.2s;
 }
 
 button:active {
