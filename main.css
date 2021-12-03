@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -19,6 +19,15 @@ body {
 .logo-section {
   padding: 24px;
   justify-content: space-between;
+}
+
+.my-logo {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
 }
 
 .logo-section a {
@@ -57,7 +66,7 @@ body {
 }
 
 .hero {
-  background-image: url('img/header-shapes\ mobile.png');
+  background-image: url("img/Header\ bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -69,7 +78,8 @@ body {
 .dev {
   display: flex;
   flex-direction: column;
-  padding: 80px 24px 24px 24px;
+  padding: 80px 0 0 0;
+  margin: 0 auto;
 }
 
 .dev h3 {
@@ -88,11 +98,13 @@ body {
   color: #344563;
   font-weight: 400;
   text-align: left;
+  width: 50%;
   margin-bottom: 12px;
 }
 
 .dev a,
-.social a {
+.social a,
+.social-career a {
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -211,12 +223,10 @@ body {
   width: 100%;
 }
 
-.desktop-images:hover {
+.desktop-images:hover,
+.mobile-images {
   transition: transform 0.2s;
-}
-
-.mobile-images:hover {
-  transition: transform 0.2s;
+  transform: scale(0.95);
 }
 
 .desktop-images {
@@ -310,7 +320,7 @@ button {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .see-project {
@@ -326,14 +336,13 @@ button {
 button:hover {
   background: #396df2dc;
   color: #fff;
-  transform: translateX(px);
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
 }
 
 button:active {
   background: #00f;
   color: #fff;
-  box-shadow: 0 5px #666;
-  transform: translateY(25px);
 }
 
 .printing h3 {
@@ -416,12 +425,16 @@ button:active {
 }
 
 .resume {
+  width: fit-content;
+  border-radius: 5px;
+  margin: 15px 3px;
+  border: none;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  align-items: center;
   text-align: center;
   color: #396df2;
+  font-family: "Poppins", sans-serif;
 }
 
 .language-container {
@@ -453,7 +466,7 @@ button:active {
 }
 
 .icon-down {
-  background-image: url('img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png');
+  background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -508,7 +521,7 @@ button:active {
 }
 
 .icon-right {
-  background-image: url('img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png');
+  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
   background-repeat: no-repeat;
   height: 25px;
   width: 25px;
@@ -520,7 +533,7 @@ button:active {
 
 /* form-section */
 footer {
-  background-image: url('img/contact\ form\ background\ shapes.png');
+  background-image: url("img/contact\ form\ background\ shapes.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 21px;
@@ -531,7 +544,6 @@ footer {
 }
 
 .form-section {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -557,6 +569,9 @@ footer {
   line-height: 28px;
   color: #ebebff;
   padding-bottom: 30px;
+}
+
+.form-section {
   width: 50%;
 }
 
@@ -634,16 +649,15 @@ footer {
     display: block;
   }
 
-  .hero {
-    background-image: url('img/Header\ bg.png');
-  }
-
   .tonic-section,
   .printing-section,
   .facebook-section,
-  .uber-section,
-  .about-section {
+  .uber-section {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section {
+    grid-template-columns: 40% 60%;
   }
 
   .frontend {
@@ -652,5 +666,9 @@ footer {
 
   .elipse-name {
     flex-direction: row;
+  }
+
+  .apply {
+    width: 50%;
   }
 }
