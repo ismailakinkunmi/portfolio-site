@@ -166,6 +166,14 @@ body {
   width: 100%;
 }
 
+.desktop-images:hover {
+  transition: transform 0.2s;
+}
+
+.mobile-images:hover {
+  transition: transform 0.2s;
+}
+
 .desktop-images {
   display: none;
 }
@@ -274,7 +282,6 @@ button:hover {
   background: #396df2dc;
   color: #fff;
   transform: translateX(px);
-  transition: transform 0.2s;
 }
 
 button:active {
