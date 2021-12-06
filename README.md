@@ -31,7 +31,7 @@ HTML & CSS
 
 #### Live Demo
 
-This site was built using [GitHub Pages](http://127.0.0.1:5500/index.html/).
+This site was built using [GitHub Pages](https://ismailakinkunmi.github.io/portfolio-site/)
 
 #### Author
 
