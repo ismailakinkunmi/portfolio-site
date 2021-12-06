@@ -78,7 +78,8 @@ body {
 .dev {
   display: flex;
   flex-direction: column;
-  padding: 80px 24px 24px 24px;
+  padding: 80px 0 0 0;
+  margin: 0 auto;
 }
 
 .dev h3 {
@@ -97,6 +98,7 @@ body {
   color: #344563;
   font-weight: 400;
   text-align: left;
+  width: 50%;
   margin-bottom: 12px;
 }
 
@@ -129,6 +131,51 @@ body {
   font-size: 32px;
   align-items: center;
   justify-content: center;
+}
+
+.social .iconify:hover,
+.social-career .iconify:hover {
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
 }
 
 .main-section {
@@ -178,6 +225,12 @@ body {
 
 .desktop-images {
   display: none;
+}
+
+.desktop-images:hover,
+.mobile-images {
+  transition: transform 0.2s;
+  transform: scale(0.95);
 }
 
 .tonic h3,
@@ -283,6 +336,8 @@ button {
 button:hover {
   background: #396df2dc;
   color: #fff;
+  box-shadow: 0 5px #666;
+  transform: translateY(0.5rem);
 }
 
 button:active {
@@ -355,18 +410,21 @@ button:active {
   display: flex;
   align-items: center;
   color: #091e42;
+  margin-bottom: 0.7rem;
 }
 
 .career {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  margin-bottom: 1rem;
 }
 
 .social-career ul {
   padding: 0;
   display: flex;
   flex-direction: row;
+  margin: 0.8rem 0;
 }
 
 .resume {
@@ -490,11 +548,11 @@ footer {
 }
 
 .form-section {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 50%;
 }
 
 .contact-me {
