@@ -551,6 +551,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
   margin: 0 auto;
   width: 50%;
 }
@@ -577,10 +578,16 @@ footer {
 }
 
 .form-section form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 27px;
+  width: 50%;
+}
+
+label {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
 }
 
 .form-section input {
@@ -595,10 +602,10 @@ footer {
 
 .form-section textarea {
   height: 170px;
-  width: 327px;
   border-radius: 8px;
   background: #fff;
-  padding: 16px 38px 0 16px;
+  padding: 24px 15px 0 16px;
+  width: 100%;
 }
 
 .form-section button {
@@ -608,6 +615,7 @@ footer {
   color: #6070ff;
   border: 1px solid #fff;
   cursor: pointer;
+  text-align: center;
 }
 
 .form-section button:hover {
@@ -669,7 +677,31 @@ footer {
     flex-direction: row;
   }
 
+  .form-section {
+    width: 65%;
+  }
+
   .apply {
+    width: 55%;
+  }
+
+  .form-section form {
+    width: 90%;
+    text-align: center;
+  }
+
+  .form-section label {
+    width: 40%;
+  }
+
+  .form-section input,
+  .form-section textarea {
     width: 50%;
+    text-align: left;
+  }
+
+  .form-section button {
+    text-align: center;
+    margin-left: 15rem;
   }
 }
