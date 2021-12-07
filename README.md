@@ -1,8 +1,8 @@
-# portfolio-setup
+# Responsive Portfolio
 
-## portfolio-setup Project
+## Responsive Portfolio Project
 
-This project is a replicate of the Figma template 1 responsive mobile version from header section to
+This project is a replicate of the Figma template 1 responsive portfolio website that support all screen sizes, from header section to
 the contact form.
 ![ScreenShot Tool -20211203093314](https://user-images.githubusercontent.com/37457094/144571050-65df8422-2a6c-4bfb-a050-69d8f25feab0.png)
 
