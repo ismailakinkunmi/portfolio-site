@@ -1,6 +1,6 @@
-# Responsive Portfolio
+# Akins Portfolio
 
-## Responsive Portfolio Website
+## Akins Portfolio Website
 
 This project is a replicate of the Figma template 1 responsive portfolio website that support all screen sizes, from header section to
 the contact form.
