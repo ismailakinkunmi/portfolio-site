@@ -576,6 +576,7 @@ footer {
 
 .apply {
   font-size: 20px;
+  font-weight: bold;
   line-height: 28px;
   color: #ebebff;
   padding-bottom: 30px;
@@ -593,6 +594,7 @@ label {
   font-weight: bold;
   text-align: center;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .form-section input {
@@ -688,25 +690,5 @@ label {
 
   .apply {
     width: 55%;
-  }
-
-  .form-section form {
-    width: 90%;
-    text-align: center;
-  }
-
-  .form-section label {
-    width: 40%;
-  }
-
-  .form-section input,
-  .form-section textarea {
-    width: 50%;
-    text-align: left;
-  }
-
-  .form-section button {
-    text-align: center;
-    margin-left: 15rem;
   }
 }
