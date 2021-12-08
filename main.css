@@ -44,8 +44,10 @@ body {
 .logo-section h6 {
   font-weight: bold;
   font-size: 18px;
-  color: #6070ff;
+  color: #1b31f0;
   line-height: 20px;
+
+  /* color: #6070ff; */
 }
 
 .nav-ul {
@@ -310,6 +312,7 @@ body {
 
 button {
   width: fit-content;
+  width: -moz-fit-content;
   border-radius: 5px;
   font-weight: 500;
   font-size: 12px;
@@ -325,6 +328,7 @@ button {
 
 .see-project {
   width: fit-content;
+  width: -moz-fit-content;
   border: 1px solid #396df2;
   border-radius: 10px;
   font-size: 17px;
@@ -429,6 +433,7 @@ button:active {
 
 .resume {
   width: fit-content;
+  width: -moz-fit-content;
   border-radius: 10px;
   border: 2px solid #396df2;
   margin: 15px 3px;
