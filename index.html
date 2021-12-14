@@ -38,24 +38,23 @@
         <nav class="nav">
           <div>
             <ul class="navUl">
-              <li><a href="#">Portfolio </a></li>
+              <li><a href="#portfolio">Portfolio </a></li>
               <li><a href="#about">About </a></li>
-              <li><a href="#">Contact </a></li>
+              <li><a href="#contact">Contact </a></li>
             </ul>
           </div>
 
           <!-- The overlay -->
           <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              >&times;</a
-            >
+            <!-- javascript:void(0) -->
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
 
             <!-- Overlay content -->
             <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Contact</a>
+              <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+              <a href="#about" onclick="closeNav()">About</a>
+              <a href="#contact" onclick="closeNav()">Contact</a>
             </div>
           </div>
 
