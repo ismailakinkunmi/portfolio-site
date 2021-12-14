@@ -23,6 +23,7 @@
       function gtag() {
         dataLayer.push(arguments);
       }
+
       gtag("js", new Date());
 
       gtag("config", "UA-214517820-1");
@@ -33,26 +34,36 @@
   <body>
     <header class="header">
       <section class="logo-section">
-        <a href="#" class="my-logo">My Logo</a>
+        <ga href="#" class="my-logo">My Logo</ga>
         <nav class="nav">
-          <a href="#">
-            <span
-              class="iconify hamburger"
-              id="foo"
-              data-icon="eva:menu-outline"
-            ></span>
-          </a>
           <div>
-            <span
-              class="iconify closeIcon"
-              data-icon="ant-design:close-outlined"
-            ></span>
             <ul class="navUl">
               <li><a href="#">Portfolio </a></li>
-              <li><a href="#">About </a></li>
+              <li><a href="#about">About </a></li>
               <li><a href="#">Contact </a></li>
             </ul>
           </div>
+
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <span
+            onclick="openNav()"
+            class="iconify mobile-menu"
+            data-icon="eva:menu-outline"
+          ></span>
         </nav>
       </section>
 
@@ -321,7 +332,7 @@
       </section>
     </main>
     <section class="container">
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="career-container">
           <h2 class="myself">
             About<br />
