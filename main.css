@@ -45,24 +45,19 @@ body {
   font-size: 18px;
   color: #1b31f0;
   line-height: 20px;
-
-  /* color: #6070ff; */
 }
-/*
+
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 0;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   background: #6070ffe7;
-  /*background-color: rgb(0, 0, 0); 
-  background-color: rgba(0, 0, 0, 0.9); */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 /* Position the content inside the overlay */
@@ -84,7 +79,22 @@ body {
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
+.dev {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0 0;
+  margin: 0 auto;
+}
+
+.dev a,
+.social a,
+.social-career a {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  color: #505f79;
+}
+
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
@@ -117,22 +127,9 @@ body {
   height: 2.5rem;
 }
 
-/* .nav div {
-  display: none;
-} */
-
 .navUl {
   display: none;
 }
-
-/* .navUl a {
-  text-decoration: none;
-  color: #344563;
-  text-align: center;
-  line-height: 20px;
-  font-weight: 500;
-  font-size: 15px;
-} */
 
 .hero {
   background-image: url("img/Header\ bg.png");
@@ -141,16 +138,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   justify-content: center;
-}
-
-.dev {
-  display: flex;
-  flex-direction: column;
-  padding: 80px 0 0 0;
-  margin: 0 auto;
 }
 
 .dev h1 {
@@ -170,15 +159,6 @@ body {
   font-weight: 400;
   text-align: left;
   margin-bottom: 12px;
-}
-
-.dev a,
-.social a,
-.social-career a {
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  color: #505f79;
 }
 
 .connect {
@@ -635,12 +615,6 @@ footer {
   color: #fff;
   margin-bottom: 5px;
 }
-/*
-.contact-me,
-.apply,
-.form-section button {
-  text-align: center;
-} */
 
 .apply {
   font-size: 20px;
