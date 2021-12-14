@@ -13,11 +13,10 @@ body {
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .logo-section {
-  padding: 24px;
+  padding: 24px 0;
   justify-content: space-between;
 }
 
@@ -50,21 +49,37 @@ body {
   /* color: #6070ff; */
 }
 
-.nav-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 15px;
+.hamburger {
+  background: transparent;
+  cursor: pointer;
+  width: 4rem;
+  height: 2.5rem;
 }
 
-.nav-ul a {
+.nav div {
+  display: none;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+/* .closebtn {
+  font-size: 40px;
+} */
+
+.navUl a {
   text-decoration: none;
   color: #344563;
   text-align: center;
   line-height: 20px;
   font-weight: 500;
   font-size: 15px;
-  display: none;
 }
 
 .hero {
@@ -73,8 +88,10 @@ body {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  width: 100%;
+  justify-content: center;
 }
 
 .dev {
@@ -100,7 +117,6 @@ body {
   color: #344563;
   font-weight: 400;
   text-align: left;
-  width: 50%;
   margin-bottom: 12px;
 }
 
@@ -256,7 +272,7 @@ body {
 .uber-date {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.5rem;
   padding-bottom: 32px;
 }
 
@@ -557,7 +573,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
 .contact-me {
@@ -567,12 +583,12 @@ footer {
   color: #fff;
   margin-bottom: 5px;
 }
-
+/* 
 .contact-me,
 .apply,
 .form-section button {
   text-align: center;
-}
+} */
 
 .apply {
   font-size: 20px;
@@ -583,8 +599,10 @@ footer {
 }
 
 .form-section form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 80%;
 }
 
 label {
@@ -638,14 +656,24 @@ label {
 
 @media screen and (min-width: 992px) {
   .logo-section {
-    padding: 25px 154px 0 155px;
+    padding: 1.5rem 5rem;
   }
 
   .dev {
     padding: 334px 260px 0 260px;
   }
 
-  .nav .iconify,
+  .nav div {
+    display: block;
+  }
+
+  .navUl {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav .hamburger,
+  .closeIcon,
   .mobile-images,
   .daily-mobile,
   .tonic-version,
@@ -654,7 +682,7 @@ label {
     display: none;
   }
 
-  .nav-ul a,
+  .navUl a,
   .desktop-images,
   .tonic h3,
   .text,
@@ -685,10 +713,20 @@ label {
   }
 
   .form-section {
-    width: 65%;
+    width: 60%;
   }
 
-  .apply {
-    width: 55%;
+  .form-section .apply {
+    width: 60%;
+  }
+
+  .form-section form {
+    width: 60%;
+  }
+
+  .form-section label,
+  .form-section input,
+  .form-section textarea {
+    width: 80%;
   }
 }

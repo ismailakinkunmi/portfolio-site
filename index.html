@@ -35,12 +35,24 @@
       <section class="logo-section">
         <a href="#" class="my-logo">My Logo</a>
         <nav class="nav">
-          <span class="iconify" data-icon="eva:menu-outline"></span>
-          <ul class="nav-ul">
-            <li><a href="#">Portfolio </a></li>
-            <li><a href="#">About </a></li>
-            <li><a href="#">Contact </a></li>
-          </ul>
+          <a href="#">
+            <span
+              class="iconify hamburger"
+              id="foo"
+              data-icon="eva:menu-outline"
+            ></span>
+          </a>
+          <div>
+            <span
+              class="iconify closeIcon"
+              data-icon="ant-design:close-outlined"
+            ></span>
+            <ul class="navUl">
+              <li><a href="#">Portfolio </a></li>
+              <li><a href="#">About </a></li>
+              <li><a href="#">Contact </a></li>
+            </ul>
+          </div>
         </nav>
       </section>
 
@@ -111,7 +123,7 @@
         <div class="tonic">
           <h3>Tonic</h3>
           <div class="date">
-            <h3>CANOPY</h3>
+            <h5>CANOPY</h5>
             <img src="img/Counter.png" alt="" class="counter" />
             <p>Back End Dev</p>
             <img src="img/Counter.png" alt="" class="counter" />
@@ -135,8 +147,8 @@
           <h3>Multi-Post Stories</h3>
           <div class="printing-date">
             <ul class="change-content">
-              <li><h3 class="desktop">FACEBOOK</h3></li>
-              <li><h3 class="mobile">CANOPY</h3></li>
+              <li><h5 class="desktop">FACEBOOK</h5></li>
+              <li><h5 class="mobile">CANOPY</h5></li>
             </ul>
 
             <img src="img/Counter.png" alt="" class="counter" />
@@ -407,7 +419,7 @@
             required
             maxlength="30"
           />
-          <br /><br />
+          <br />
           <label for="email">Enter your email address:</label>
           <input
             type="email"
@@ -416,7 +428,7 @@
             placeholder="Enter your email here"
             required
           />
-          <br /><br />
+          <br />
           <label for="usermessage">Enter your message here:</label>
           <textarea
             placeholder="Write your message here"
@@ -434,5 +446,6 @@
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
