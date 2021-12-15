@@ -121,7 +121,7 @@ body {
   }
 }
 
-.mobile-menu {
+.openbtn {
   background: transparent;
   cursor: pointer;
   width: 4rem;
@@ -159,6 +159,7 @@ body {
   color: #344563;
   font-weight: 400;
   text-align: left;
+  align-items: center;
   margin-bottom: 12px;
 }
 
@@ -285,7 +286,6 @@ body {
 }
 
 .tonic h3,
-.printing h3,
 .tonic-version,
 .text {
   font-weight: bold;
@@ -305,11 +305,10 @@ body {
 .uber-date {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 0.2rem;
   padding-bottom: 32px;
 }
 
-.date h5,
 .printing-date h5,
 .mobile,
 .uber-date h5 {
@@ -396,18 +395,6 @@ button:hover {
 button:active {
   background: #00f;
   color: #fff;
-}
-
-.printing h3 {
-  margin-top: 48px;
-}
-
-.printing-date {
-  gap: 10px;
-}
-
-.printing-date h5 {
-  width: 96px;
 }
 
 .uber-car {
@@ -701,7 +688,14 @@ label {
     gap: 1rem;
   }
 
-  .nav .mobile-menu,
+  .date,
+  .printing-date,
+  .facebook .date,
+  .uber-date {
+    gap: 0.5rem;
+  }
+
+  .openbtn,
   .closeIcon,
   .mobile-images,
   .daily-mobile,

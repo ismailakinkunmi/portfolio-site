@@ -47,22 +47,23 @@
           <!-- The overlay -->
           <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
-
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
               >&times;</a
             >
-
             <!-- Overlay content -->
             <div class="overlay-content">
-              <a href="#" onclick="closeNav()">Portfolio</a>
-              <a href="#" onclick="closeNav()">About</a>
-              <a href="#" onclick="closeNav()">Contact</a>
+              <a href="http://127.0.0.1:5500/index.html" onclick="closeNav()"
+                >Portfolio</a
+              >
+              <a href="#about" onclick="closeNav()">About</a>
+              <a href="#contact" onclick="closeNav()">Contact</a>
             </div>
           </div>
 
+          <!-- Use any element to open/show the overlay navigation menu -->
           <span
+            class="iconify openbtn"
             onclick="openNav()"
-            class="iconify mobile-menu"
             data-icon="eva:menu-outline"
           ></span>
         </nav>
@@ -156,11 +157,11 @@
 
       <section class="printing-section">
         <div class="printing">
-          <h3>Multi-Post Stories</h3>
+          <h3 class="text">Multi-Post Stories</h3>
           <div class="printing-date">
             <ul class="change-content">
-              <li><h5 class="desktop">FACEBOOK</h5></li>
-              <li><h5 class="mobile">CANOPY</h5></li>
+              <li><h3 class="desktop">FACEBOOK</h3></li>
+              <li><h3 class="mobile">CANOPY</h3></li>
             </ul>
 
             <img src="img/Counter.png" alt="" class="counter" />
@@ -414,7 +415,7 @@
     </section>
 
     <footer>
-      <section class="form-section">
+      <section class="form-section" id="contact">
         <h3 class="contact-me">Contact me</h3>
         <p class="apply">
           If you have an application you are interested in developing, a feature
