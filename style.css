@@ -67,55 +67,71 @@ body {
   display: none;
 }
 
-/* The Overlay (background) */
-.overlay-mobile {
-  height: 100%;
-  width: 0;
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  height: 2px;
+  background-color: #6070ff;
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu.active {
+  z-index: 999;
   position: fixed;
-  z-index: 1; /* Sit on top */
-  left: 0;
+  top: 24px;
+  right: 24px;
+}
+
+.menu.active span:first-child {
+  transform: rotate(-43deg);
+  background-color: #fff;
+}
+
+.menu.active span:nth-child(2) {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.menu.active span:last-child {
+  transform: rotate(43deg);
+  background-color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 90px 24px;
+  background: #6070ffe7;
+  position: fixed;
   top: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s;
-  position: relative;
-  background: #396df2;
-  top: 25%;
+  left: 0;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  height: 100vh;
 }
 
-/* The navigation links inside the overlay */
-.nav-link {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* 
-  transition: 0.3s; /* Transition effects on hover (color) */
+.mobile-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.nav-link:hover,
-.nav-link a:focus {
-  color: #f1f1f1;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .nav-link {
-    font-size: 20px;
-  }
-  .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+.menu-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .hero {
@@ -151,7 +167,7 @@ body {
   color: #344563;
   font-weight: 400;
   text-align: left;
-  width: 50%;
+  width: 100%;
   margin-bottom: 12px;
 }
 
