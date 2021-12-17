@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const hamburger = document.querySelector('.menu');
 const links = document.querySelectorAll('.mobile-menu a');
 
@@ -19,3 +20,109 @@ links.forEach((a) => {
     document.querySelector('.mobile-menu').style.display = 'none';
   });
 });
+
+const cardObject = [
+  {
+    id: 1,
+    title: 'Tonic',
+    subTitle: 'CANOPY',
+    imageMobile: './img/Snapshoot-Portfolio.png',
+    imageDesktop: './img/card-Portfolio.png',
+    details: ['Back End Dev', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    langs: ['html', 'css', 'javaScript'],
+    gitLink: '#',
+    srcLink: '#',
+  },
+  {
+    id: 2,
+    title: 'Tonic',
+    subTitle: 'CANOPY',
+    imageMobile: './img/Snapshoot-Portfolio.png',
+    imageDesktop: './img/Snapshoot-Portfolio3.png',
+    details: ['Back End Dev', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    langs: ['html', 'css', 'javaScript'],
+    gitLink: '#',
+    srcLink: '#',
+  },
+  {
+    id: 3,
+    title: 'Tonic',
+    subTitle: 'CANOPY',
+    imageMobile: './img/Snapshoot-Portfolio2.png',
+    imageDesktop: './img/Snapshoot-Portfolio.png',
+    details: ['Back End Dev', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    langs: ['html', 'css', 'javaScript'],
+    gitLink: '#',
+    srcLink: '#',
+  },
+  {
+    id: 4,
+    title: 'Tonic',
+    subTitle: 'CANOPY',
+    imageMobile: './img/Snapshoot-Portfolio3.png',
+    imageDesktop: './img/Snapshoot-Portfolio1.png',
+    details: ['Back End Dev', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    langs: ['html', 'css', 'javaScript'],
+    gitLink: '#',
+    srcLink: '#',
+  },
+];
+
+for (let i = 0; i < cardObject.length; i++) {
+  const element = cardObject[i];
+
+  document.querySelector(
+    '.main-section'
+  ).innerHTML += `<section class="tonic-section" id="tonic">
+        <ul class="images">
+          <li>
+            <img
+              src="${element.imageDesktop}"
+              alt="nature card"
+              class="desktop-images"
+            />
+          </li>
+          <li>
+            <img
+              src="${element.imageMobile}"
+              alt="tarnner christensen from high school dropout to product designer at facebook"
+              class="mobile-images"
+            />
+          </li>
+        </ul>
+
+        <div class="tonic">
+          <h3>${element.title}</h3>
+          <div class="date">
+            <h3>${element.subTitle}</h3>
+                ${element.details
+                  .map(
+                    (
+                      x
+                    ) => ` <img src="img/Counter.png" alt="" class="counter" />
+            <p>${x}</p>`
+                  )
+                  .join('')}           
+          </div>
+          <p class="daily">
+           ${element.description}
+          </p>      
+          
+          <div>           
+            ${element.langs
+              .map((x) => `<button type="button">${x}</button>`)
+              .join('')}           
+          </div>
+          <button id='${element.id}' class="see-project">See Project</button>
+
+        </div>
+      </section>`;
+}

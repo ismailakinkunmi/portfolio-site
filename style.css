@@ -697,6 +697,77 @@ label {
   border-color: #2230d2;
 }
 
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #c1c7d0d7;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  width: 90%;
+  max-height: 90%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  margin: 0;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #6070ff;
+}
+
+.modal > img {
+  width: 100%;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  width: 100%;
+}
+
+.modal-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content ul {
+  margin: 0 0 16px 0;
+}
+
+.modal-btns {
+  display: flex;
+  padding-top: 20px;
+  border-top: 1px solid #ebecf0;
+  gap: 20px;
+}
+
 @media screen and (min-width: 992px) {
   .logo-section {
     padding: 25px 154px 0 155px;
@@ -756,5 +827,15 @@ label {
 
   .apply {
     width: 55%;
+  }
+
+  .modal-content {
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+
+  .modal-content ul,
+  .modal-content p {
+    margin-top: 50px;
   }
 }
