@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -67,8 +67,64 @@ body {
   display: none;
 }
 
+.menu {
+  cursor: pointer;
+  font-size: 50px;
+  background: transparent;
+}
+
+/* The Overlay (background) */
+.overlay-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.nav-link {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* 
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.nav-link:hover,
+.nav-link a:focus {
+  color: #f1f1f1;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .nav-link {
+    font-size: 20px;
+  }
+  .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 .hero {
-  background-image: url("img/Header\ bg.png");
+  background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -235,8 +291,6 @@ body {
   transform: scale(0.95);
 }
 
-.tonic h3,
-.printing h3,
 .tonic-version,
 .text {
   font-weight: bold;
@@ -323,7 +377,7 @@ button {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .see-project {
@@ -347,10 +401,6 @@ button:hover {
 button:active {
   background: #00f;
   color: #fff;
-}
-
-.printing h3 {
-  margin-top: 48px;
 }
 
 .printing-date {
@@ -444,7 +494,7 @@ button:active {
   text-align: center;
   background: #fff;
   color: #396df2;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .language-container {
@@ -475,7 +525,7 @@ button:active {
 }
 
 .icon-down {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png');
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -530,7 +580,7 @@ button:active {
 }
 
 .icon-right {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png');
   background-repeat: no-repeat;
   height: 25px;
   width: 25px;
@@ -542,7 +592,7 @@ button:active {
 
 /* form-section */
 footer {
-  background-image: url("img/contact\ form\ background\ shapes.png");
+  background-image: url('img/contact\ form\ background\ shapes.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 21px;
@@ -641,11 +691,16 @@ label {
     padding: 25px 154px 0 155px;
   }
 
+  .menu,
+  .close,
+  .nav-link {
+    display: none;
+  }
+
   .dev {
     padding: 334px 260px 0 260px;
   }
 
-  .nav .iconify,
   .mobile-images,
   .daily-mobile,
   .tonic-version,

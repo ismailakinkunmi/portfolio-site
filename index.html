@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,28 +23,29 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-214517820-1");
+      gtag('config', 'UA-214517820-1');
     </script>
 
     <title>Akins Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <section class="logo-section">
+      <div class="logo-section">
         <a href="#" class="my-logo">My Logo</a>
+
         <nav class="nav">
-          <span class="iconify" data-icon="eva:menu-outline"></span>
           <ul class="nav-ul">
             <li><a href="#">Portfolio </a></li>
             <li><a href="#">About </a></li>
             <li><a href="#">Contact </a></li>
           </ul>
+          <span class="iconify menu" data-icon="eva:menu-outline"></span>
         </nav>
-      </section>
+      </div>
 
-      <section class="hero">
+      <div class="hero">
         <div class="dev">
           <h1>I’m Ismail <br />Glad to see you!</h1>
           <p>
@@ -86,7 +87,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </header>
 
     <main class="main-section">
@@ -308,7 +309,7 @@
         </ul>
       </section>
     </main>
-    <section class="container">
+    <div class="container">
       <section class="about-section">
         <div class="career-container">
           <h2 class="myself">
@@ -387,7 +388,7 @@
           </ul>
         </div>
       </section>
-    </section>
+    </div>
 
     <footer>
       <section class="form-section">
@@ -430,6 +431,7 @@
         </form>
       </section>
     </footer>
+    <script src="main.js"></script>
     <script
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"
