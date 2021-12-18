@@ -410,21 +410,24 @@
           method="POST"
         >
           <input
+            id="fullName"
             type="text"
+            name="name"
             placeholder="Please provide your name"
             required
             maxlength="30"
           />
 
           <input
+            id="email"
             type="email"
             name="email"
-            class="email"
             placeholder="Please provide your Email"
             required
           />
 
           <textarea
+            id="message"
             placeholder="Write your message here"
             name="usermsg"
             required
@@ -435,7 +438,8 @@
         </form>
       </section>
     </footer>
-    <script src="main.js"></script>
+    <script src="./srcipt/main.js"></script>
+    <script src="./script/localStorage.js"></script>
     <script
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"
