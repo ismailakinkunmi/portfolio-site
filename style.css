@@ -45,7 +45,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   color: #1b31f0;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
 .nav-ul {
@@ -421,7 +421,6 @@ button:active {
   color: #fff;
 }
 
-
 .printing h3 {
   margin-top: 48px;
 }
@@ -466,18 +465,11 @@ button:active {
   border-top-right-radius: 60px;
   align-items: center;
   padding: 100px 5px;
+}
 
 .container {
   margin: 0;
   background: #e5e5e5;
-}
-
-.about-section {
-  padding: 3rem;
-  border-radius: 0 60px 0 0;
-  background: #fff;
-  gap: 37px;
-  margin-top: 0;
 }
 
 .ube .career-container {
@@ -805,7 +797,7 @@ label {
   .dev {
     padding: 334px 260px 0 260px;
   }
-  
+
   .mobile-images,
   .daily-mobile,
   .tonic-version,
@@ -834,7 +826,7 @@ label {
   .facebook-section,
   .uber-section,
   .about-section {
-    gridtemplate-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     padding-left: 12px;
     padding-right: 12px;
@@ -870,6 +862,5 @@ label {
 
   .apply {
     width: 100%;
-    
   }
 }
