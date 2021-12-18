@@ -704,7 +704,7 @@ label {
   height: 100vh;
   width: 100vw;
   background: #c1c7d0d7;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -766,6 +766,37 @@ label {
   padding-top: 20px;
   border-top: 1px solid #ebecf0;
   gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 12px;
+  margin: 0;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px #6070ff solid;
+  color: #6070ff;
+  cursor: pointer;
+}
+
+.iconbtn {
+  color: #000;
+}
+
+.iconbtn,
+.iconbtnlink {
+  width: 20px;
+  margin-left: 14px;
+  font-size: 24px;
 }
 
 @media screen and (min-width: 992px) {

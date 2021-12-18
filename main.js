@@ -122,7 +122,66 @@ for (let i = 0; i < cardObject.length; i++) {
               .join('')}           
           </div>
           <button id='${element.id}' class="see-project">See Project</button>
-
         </div>
       </section>`;
 }
+
+document.querySelectorAll('.see-project').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const id = Number(btn.id);
+    const project = cardObject.find((p) => p.id === id);
+
+    document.querySelector('.pop').innerHTML = `
+      
+    <section class="modal-wrapper">
+      <div class="modal">
+        <div class="modal-title">
+          <h2>${project.title}</h2>
+          <div class='close-modal'>
+          <span class="iconify" data-icon="ep:close-bold"></span>
+          </div>
+        </div>
+        <div class="date">
+            <h3>${project.subTitle}</h3>
+                ${project.details
+                  .map(
+                    (
+                      x
+                    ) => ` <img src="img/Counter.png" alt="" class="counter" />
+            <p>${x}</p>`
+                  )
+                  .join('')}           
+          </div>
+        <img src="${project.imageDesktop}"/>
+        <div class="modal-content">
+          <p>
+            ${project.description}
+          </p>
+          <div>
+             <div>           
+            ${project.langs
+              .map((x) => `<button type="button">${x}</button>`)
+              .join('')}           
+          </div>
+            <div class="modal-btns">
+              <a href="${project.gitLink}" class="btn github-link">
+                See live
+                <span class="iconify iconbtn" data-icon="bytesize:github"></span>                                                                      
+              </a>
+              <a href="${project.srcLink}" class="btn source-link">
+                See source                
+                <span class="iconify iconbtnlink" data-icon="cil:external-link"></span>                            
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    `;
+    document.querySelector('.close-modal').addEventListener('click', () => {
+      document.querySelector('.modal-wrapper').remove();
+    });
+  });
+});
