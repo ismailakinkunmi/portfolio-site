@@ -19,7 +19,8 @@ form.addEventListener('submit', (e) => {
     showMsg(email, 'The email should be lowercase');
     showMsg;
     return false;
+  } else {
+    form.submit();
+    return true;
   }
-  form.submit();
-  return true;
 });
