@@ -17,7 +17,9 @@ form.addEventListener('submit', (e) => {
 
   resetMsg();
 
-  if (email.value === email.value.toLowerCase()) {
+  const mail = email.value.toLowerCase();
+
+  if (mail === email.value) {
     form.submit();
     return true;
   }
