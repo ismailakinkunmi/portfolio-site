@@ -508,7 +508,6 @@ button:active {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 12px;
   margin: 15px 3px;
   padding: 0.8rem;
   text-align: center;
@@ -582,6 +581,7 @@ button:active {
   align-items: center;
   color: #000;
 }
+
 .elipsejs,
 .elipsehtml,
 .elipsecss {
@@ -635,7 +635,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin: 0 auto;
   width: 70%;
 }
@@ -657,8 +656,6 @@ footer {
 
 .apply {
   font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
@@ -676,27 +673,6 @@ footer {
 }
 
 .form-section input {
-  margin-bottom: 28px;
-  padding: 25px;
-  border: none;
-  outline: none;
-  font-weight: 400;
-  color: #172b4d;
-  line-height: 20px;
-  width: 70%;
-}
-
-label {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fff;
-  font-weight: bold;
-  text-align: left;
-  font-style: normal;
-  margin-bottom: 5px;
-}
-
-.form-section input {
   padding: 15px;
   border: none;
   outline: none;
@@ -704,6 +680,7 @@ label {
   border-radius: 5px;
   text-align: left;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-section textarea {
@@ -725,7 +702,6 @@ label {
   padding: 14px;
   font-size: 17px;
   line-height: 24px;
-  padding: 12px 16px;
   color: #1b31f0;
   border: 1px solid #fff;
   cursor: pointer;
@@ -750,10 +726,6 @@ label {
 
   .dev {
     padding: 334px 260px 0 260px;
-  }
-
-  .dev p {
-    width: 80%;
   }
 
   .nav .iconify,
