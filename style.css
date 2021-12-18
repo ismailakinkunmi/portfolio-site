@@ -673,14 +673,17 @@ footer {
 }
 
 .form-section input {
-  padding: 15px;
+  margin-bottom: 28px;
+  padding: 25px;
   border: none;
   outline: none;
+  font-weight: 400;
+  color: #172b4d;
+  line-height: 20px;
   background: #fff;
   border-radius: 5px;
   text-align: left;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .form-section textarea {
