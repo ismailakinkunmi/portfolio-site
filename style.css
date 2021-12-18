@@ -618,7 +618,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
 }
 
 .contact-me {
@@ -645,7 +645,7 @@ footer {
 
 .form-section form {
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 
 label {
@@ -653,7 +653,7 @@ label {
   line-height: 28px;
   color: #fff;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   font-style: normal;
   margin-bottom: 5px;
 }
@@ -751,7 +751,7 @@ label {
   }
 
   .form-section {
-    width: 65%;
+    width: 50%;
   }
 
   .apply {

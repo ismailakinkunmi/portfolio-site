@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('.menu');
 const links = document.querySelectorAll('.mobile-menu a');
-
 hamburger.addEventListener('click', () => {
   if (hamburger.classList.contains('active')) {
     hamburger.classList.remove('active');
@@ -10,7 +9,6 @@ hamburger.addEventListener('click', () => {
     document.querySelector('.mobile-menu').style.display = 'block';
   }
 });
-
 links.forEach((a) => {
   a.addEventListener('click', (e) => {
     e.preventDefault();
