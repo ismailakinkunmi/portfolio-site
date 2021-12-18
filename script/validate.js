@@ -17,11 +17,12 @@ form.addEventListener('submit', (e) => {
 
   resetMsg();
 
-  if (email.value !== email.value.toLowerCase()) {
-    showMsg(email, 'The email should be lowercase');
-    return false;
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+    return true;
   }
 
-  form.submit();
-  return true;
+  showMsg(email, 'The email should be lowercase');
+  showMsg();
+  return false;
 });
