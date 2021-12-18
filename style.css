@@ -13,6 +13,7 @@ body {
   background: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logo-section {
@@ -44,9 +45,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   color: #1b31f0;
-  line-height: 20px;
-
-  /* color: #6070ff; */
+  line-height: 20px; 
 }
 
 .nav-ul {
@@ -66,6 +65,73 @@ body {
   display: none;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  height: 2px;
+  background-color: #6070ff;
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu.active {
+  z-index: 999;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.menu.active span:first-child {
+  transform: rotate(-43deg);
+  background-color: #fff;
+}
+
+.menu.active span:nth-child(2) {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.menu.active span:last-child {
+  transform: rotate(43deg);
+  background-color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 90px 24px;
+  background: #6070ffe7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .hero {
   background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
@@ -80,6 +146,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 80px 0 5px 10px;
+  padding: 80px 0 0 0;
+  margin: 0 auto;
 }
 
 .dev h1 {
@@ -97,6 +165,7 @@ body {
   line-height: 28px;
   color: #344563;
   font-weight: 400;
+  text-align: left;
   width: 100%;
   margin-bottom: 12px;
 }
@@ -182,6 +251,9 @@ body {
   background: #e5e5e5;
   justify-content: center;
   align-items: center;
+  padding: 70px 24px 114px 24px;
+  background: #e5e5e5;
+  justify-content: center;
 }
 
 .tonic-section,
@@ -195,6 +267,7 @@ body {
   grid-gap: 24px;
   border-radius: 24px;
   padding: 0.5rem;
+  padding: 1.5rem;
   margin: 73px 0;
 }
 
@@ -265,6 +338,7 @@ body {
   width: 75px;
   height: 24px;
   font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #344563;
@@ -347,6 +421,7 @@ button:active {
   color: #fff;
 }
 
+
 .printing h3 {
   margin-top: 48px;
 }
@@ -366,6 +441,7 @@ button:active {
 
 .uber-section {
   gap: 46px;
+  margin-bottom: 0;
 }
 
 .desktop-p {
@@ -390,6 +466,18 @@ button:active {
   border-top-right-radius: 60px;
   align-items: center;
   padding: 100px 5px;
+
+.container {
+  margin: 0;
+  background: #e5e5e5;
+}
+
+.about-section {
+  padding: 3rem;
+  border-radius: 0 60px 0 0;
+  background: #fff;
+  gap: 37px;
+  margin-top: 0;
 }
 
 .ube .career-container {
@@ -413,6 +501,14 @@ button:active {
   line-height: 24px;
   color: #344563;
   margin-bottom: 16px;
+  margin-bottom: 0.7rem;
+}
+
+.career {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 1rem;
 }
 
 .social-career ul {
@@ -420,6 +516,7 @@ button:active {
   display: flex;
   flex-direction: row;
   margin: 12px 0;
+  margin: 0.8rem 0;
 }
 
 .resume {
@@ -427,11 +524,18 @@ button:active {
   width: -moz-fit-content;
   border-radius: 10px;
   border: 2px solid #396df2;
+
   margin: 15px 0;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
+
+  margin: 15px 3px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 0.8rem;
   text-align: center;
   background: #fff;
   color: #396df2;
@@ -444,6 +548,7 @@ button:active {
   gap: 16px;
   width: 312px;
   padding: 0 16px;
+  gap: 12px;
 }
 
 .langguage,
@@ -459,6 +564,7 @@ button:active {
   align-items: center;
   color: #000;
   margin-bottom: 16px;
+  color: #344563;
 }
 
 .icondown-language {
@@ -486,6 +592,7 @@ button:active {
 .elipse-name {
   display: flex;
   flex-direction: row;
+
   gap: 14px;
   background: #f7f7f9;
   border-radius: 8px;
@@ -493,6 +600,12 @@ button:active {
   padding: 10px;
   height: auto;
   width: auto;
+
+  gap: 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0 0 0;
+  padding: 12px;
   align-items: center;
 }
 
@@ -509,6 +622,8 @@ button:active {
 .elipsecss {
   width: auto;
   height: auto;
+  width: 48px;
+  height: 48px;
   align-items: center;
   border: 1px solid #fff;
 }
@@ -535,6 +650,10 @@ button:active {
   margin-bottom: 16px;
 }
 
+.about-skill {
+  gap: 288px;
+}
+
 /* form-section */
 footer {
   background-image: url('img/contact\ form\ background\ shapes.png');
@@ -546,6 +665,7 @@ footer {
   padding: 110px 16px;
   width: auto;
   align-items: center;
+  padding: 110px 0 45px 0;
   border-radius: 60px 0 0 0;
 }
 
@@ -555,6 +675,8 @@ footer {
   align-items: center;
   margin: 50px auto;
   width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .contact-me {
@@ -563,6 +685,13 @@ footer {
   line-height: 52px;
   color: #fff;
   margin: 10px 0;
+  margin-bottom: 5px;
+}
+
+.contact-me,
+.apply,
+.form-section button {
+  text-align: center;
 }
 
 .apply {
@@ -572,6 +701,10 @@ footer {
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
+  line-height: 28px;
+  color: #ebebff;
+  padding-bottom: 30px;
 }
 
 .form-section form {
@@ -589,6 +722,23 @@ footer {
   font-weight: 400;
   color: #172b4d;
   line-height: 20px;
+  width: 70%;
+}
+
+label {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.form-section input {
+  padding: 15px;
+  border: none;
+  outline: none;
   background: #fff;
   border-radius: 5px;
   text-align: left;
@@ -614,6 +764,7 @@ footer {
   padding: 14px;
   font-size: 17px;
   line-height: 24px;
+  padding: 12px 16px;
   color: #1b31f0;
   border: 1px solid #fff;
   cursor: pointer;
@@ -645,6 +796,16 @@ footer {
   }
 
   .nav .iconify,
+  .menu,
+  .close,
+  .nav-link {
+    display: none;
+  }
+
+  .dev {
+    padding: 334px 260px 0 260px;
+  }
+  
   .mobile-images,
   .daily-mobile,
   .tonic-version,
@@ -673,7 +834,7 @@ footer {
   .facebook-section,
   .uber-section,
   .about-section {
-    grid-template-columns: 1fr 1fr;
+    gridtemplate-columns: 1fr 1fr;
     gap: 3rem;
     padding-left: 12px;
     padding-right: 12px;
@@ -682,6 +843,17 @@ footer {
   .language-container {
     width: auto;
     justify-content: space-between;
+  }
+
+  .tonic-section,
+  .printing-section,
+  .facebook-section,
+  .uber-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section {
+    grid-template-columns: 40% 50%;
   }
 
   .frontend {
@@ -698,5 +870,6 @@ footer {
 
   .apply {
     width: 100%;
+    
   }
 }
