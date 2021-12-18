@@ -251,9 +251,6 @@ body {
   background: #e5e5e5;
   justify-content: center;
   align-items: center;
-  padding: 70px 24px 114px 24px;
-  background: #e5e5e5;
-  justify-content: center;
 }
 
 .tonic-section,
@@ -493,14 +490,6 @@ button:active {
   line-height: 24px;
   color: #344563;
   margin-bottom: 16px;
-  margin-bottom: 0.7rem;
-}
-
-.career {
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  margin-bottom: 1rem;
 }
 
 .social-career ul {
@@ -516,17 +505,11 @@ button:active {
   width: -moz-fit-content;
   border-radius: 10px;
   border: 2px solid #396df2;
-
-  margin: 15px 0;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
-
   margin: 15px 3px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
   padding: 0.8rem;
   text-align: center;
   background: #fff;
@@ -537,7 +520,6 @@ button:active {
 .language-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   width: 312px;
   padding: 0 16px;
   gap: 12px;
@@ -556,7 +538,6 @@ button:active {
   align-items: center;
   color: #000;
   margin-bottom: 16px;
-  color: #344563;
 }
 
 .icondown-language {
@@ -584,19 +565,12 @@ button:active {
 .elipse-name {
   display: flex;
   flex-direction: row;
-
   gap: 14px;
   background: #f7f7f9;
   border-radius: 8px;
-  margin-bottom: 16px;
-  padding: 10px;
   height: auto;
   width: auto;
-
-  gap: 12px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  margin: 12px 0 0 0;
+  margin: 12px 0 16px 0;
   padding: 12px;
   align-items: center;
 }
@@ -608,14 +582,11 @@ button:active {
   align-items: center;
   color: #000;
 }
-
 .elipsejs,
 .elipsehtml,
 .elipsecss {
   width: auto;
   height: auto;
-  width: 48px;
-  height: 48px;
   align-items: center;
   border: 1px solid #fff;
 }
@@ -654,7 +625,6 @@ footer {
   background-position-y: 21px;
   background-size: contain;
   background-color: #6070ff;
-  padding: 110px 16px;
   width: auto;
   align-items: center;
   padding: 110px 0 45px 0;
@@ -665,7 +635,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto;
   width: 100%;
   margin: 0 auto;
   width: 70%;
