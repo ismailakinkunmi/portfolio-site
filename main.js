@@ -14,7 +14,6 @@ hamburger.addEventListener('click', () => {
 links.forEach((a) => {
   a.addEventListener('click', (e) => {
     e.preventDefault();
-
     hamburger.classList.remove('active');
     document.querySelector('.mobile-menu').style.display = 'none';
   });
