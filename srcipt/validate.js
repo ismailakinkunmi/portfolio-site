@@ -14,12 +14,14 @@ function resetMsg() {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+
   resetMsg();
+
   if (email.value !== email.value.toLowerCase()) {
     showMsg(email, 'The email should be lowercase');
-    showMsg;
     return false;
   }
+
   form.submit();
   return true;
 });
