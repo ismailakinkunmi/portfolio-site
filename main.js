@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-plusplus */
 const hamburger = document.querySelector('.menu');
 const links = document.querySelectorAll('.mobile-menu a');
@@ -20,6 +21,8 @@ links.forEach((a) => {
     document.querySelector('.mobile-menu').style.display = 'none';
   });
 });
+
+// popupwindow
 
 const cardObject = [
   {
@@ -176,8 +179,7 @@ document.querySelectorAll('.see-project').forEach((btn) => {
           </div>
         </div>
       </div>
-    </section>
-   
+    </section>  
 
     `;
     document.querySelector('.close-modal').addEventListener('click', () => {

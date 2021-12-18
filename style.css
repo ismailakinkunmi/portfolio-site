@@ -768,13 +768,6 @@ label {
   gap: 20px;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .btn {
   display: flex;
   align-items: center;
@@ -786,6 +779,10 @@ a {
   border: 1px #6070ff solid;
   color: #6070ff;
   cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .iconbtn {
