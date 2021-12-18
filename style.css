@@ -803,20 +803,17 @@ label {
 
   .menu,
   .close,
-  .nav-link {
-    display: none;
-  }
-
-  .dev {
-    padding: 334px 260px 0 260px;
-  }
-
+  .nav-link,
   .mobile-images,
   .daily-mobile,
   .tonic-version,
   .mobile,
   .mobile-p {
     display: none;
+  }
+
+  .dev {
+    padding: 334px 260px 0 260px;
   }
 
   .nav-ul a,
