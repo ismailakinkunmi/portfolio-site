@@ -32,19 +32,27 @@
   </head>
   <body>
     <header class="header">
-      <section class="logo-section">
+      <div class="logo-section">
         <a href="#" class="my-logo">My Logo</a>
         <nav class="nav">
-          <span class="iconify" data-icon="eva:menu-outline"></span>
           <ul class="nav-ul">
             <li><a href="#">Portfolio </a></li>
-            <li><a href="#">About </a></li>
-            <li><a href="#">Contact </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#contact">Contact </a></li>
           </ul>
         </nav>
-      </section>
+        <div class="menu"><span></span><span></span><span></span></div>
+        <!-- Mobile menu Section -->
+        <nav class="mobile-menu">
+          <ul>
+            <li><a class="menu-link" href="#tonic">Portfolio</a></li>
+            <li><a class="menu-link" href="#about">About</a></li>
+            <li><a class="menu-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <section class="hero">
+      <div class="hero">
         <div class="dev">
           <h1>I’m Ismail <br />Glad to see you!</h1>
           <p>
@@ -86,11 +94,11 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </header>
 
     <main class="main-section">
-      <section class="tonic-section">
+      <section class="tonic-section" id="tonic">
         <ul class="images">
           <li>
             <img
@@ -122,9 +130,9 @@
             sign-ups required.
           </p>
           <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
+            <button type="button">html</button>
+            <button type="button">css</button>
+            <button type="button" class="javascript">javaScript</button>
           </div>
           <button class="see-project">See Project</button>
         </div>
@@ -165,11 +173,11 @@
           </ul>
 
           <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
+            <button type="button">html</button>
+            <button type="button">css</button>
+            <button type="button" class="javascript">javaScript</button>
           </div>
-          <button class="see-project">See Project</button>
+          <button type="button" class="see-project">See Project</button>
         </div>
 
         <ul class="images">
@@ -241,9 +249,9 @@
             </li>
           </ul>
           <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
+            <button type="button">html</button>
+            <button type="button">css</button>
+            <button type="button" class="javascript">javaScript</button>
           </div>
           <button class="see-project">See Project</button>
         </div>
@@ -284,9 +292,9 @@
           </ul>
 
           <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
+            <button type="button">html</button>
+            <button type="button">css</button>
+            <button type="button" class="javascript">javaScript</button>
           </div>
           <button class="see-project">See Project</button>
         </div>
@@ -307,7 +315,8 @@
           </li>
         </ul>
       </section>
-      <section class="about-section">
+
+      <section class="about-section" id="about">
         <div class="career-container">
           <h2 class="myself">
             About<br />
@@ -349,7 +358,7 @@
               </li>
             </ul>
           </div>
-          <button class="resume">Get my resume</button>
+          <button type="button" class="resume">Get my resume</button>
         </div>
 
         <div class="language-container">
@@ -410,6 +419,7 @@
           <input
             type="email"
             name="email"
+            class="email"
             placeholder="Please provide your Email"
             required
           />
@@ -425,6 +435,7 @@
         </form>
       </section>
     </footer>
+    <script src="main.js"></script>
     <script
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"

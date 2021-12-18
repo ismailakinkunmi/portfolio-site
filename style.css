@@ -13,6 +13,7 @@ body {
   background: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logo-section {
@@ -45,8 +46,6 @@ body {
   font-size: 18px;
   color: #1b31f0;
   line-height: 20px;
-
-  /* color: #6070ff; */
 }
 
 .nav-ul {
@@ -66,6 +65,73 @@ body {
   display: none;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  height: 2px;
+  background-color: #6070ff;
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu.active {
+  z-index: 999;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.menu.active span:first-child {
+  transform: rotate(-43deg);
+  background-color: #fff;
+}
+
+.menu.active span:nth-child(2) {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.menu.active span:last-child {
+  transform: rotate(43deg);
+  background-color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 90px 24px;
+  background: #6070ffe7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .hero {
   background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
@@ -80,6 +146,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 80px 0 5px 10px;
+  padding: 80px 0 0 0;
+  margin: 0 auto;
 }
 
 .dev h1 {
@@ -97,6 +165,7 @@ body {
   line-height: 28px;
   color: #344563;
   font-weight: 400;
+  text-align: left;
   width: 100%;
   margin-bottom: 12px;
 }
@@ -195,6 +264,7 @@ body {
   grid-gap: 24px;
   border-radius: 24px;
   padding: 0.5rem;
+  padding: 1.5rem;
   margin: 73px 0;
 }
 
@@ -265,6 +335,7 @@ body {
   width: 75px;
   height: 24px;
   font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #344563;
@@ -366,6 +437,7 @@ button:active {
 
 .uber-section {
   gap: 46px;
+  margin-bottom: 0;
 }
 
 .desktop-p {
@@ -390,6 +462,11 @@ button:active {
   border-top-right-radius: 60px;
   align-items: center;
   padding: 100px 5px;
+}
+
+.container {
+  margin: 0;
+  background: #e5e5e5;
 }
 
 .ube .career-container {
@@ -420,6 +497,7 @@ button:active {
   display: flex;
   flex-direction: row;
   margin: 12px 0;
+  margin: 0.8rem 0;
 }
 
 .resume {
@@ -427,11 +505,11 @@ button:active {
   width: -moz-fit-content;
   border-radius: 10px;
   border: 2px solid #396df2;
-  margin: 15px 0;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 12px;
+  margin: 15px 3px;
+  padding: 0.8rem;
   text-align: center;
   background: #fff;
   color: #396df2;
@@ -441,9 +519,9 @@ button:active {
 .language-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   width: 312px;
   padding: 0 16px;
+  gap: 12px;
 }
 
 .langguage,
@@ -489,10 +567,10 @@ button:active {
   gap: 14px;
   background: #f7f7f9;
   border-radius: 8px;
-  margin-bottom: 16px;
-  padding: 10px;
   height: auto;
   width: auto;
+  margin: 12px 0 16px 0;
+  padding: 12px;
   align-items: center;
 }
 
@@ -535,6 +613,10 @@ button:active {
   margin-bottom: 16px;
 }
 
+.about-skill {
+  gap: 288px;
+}
+
 /* form-section */
 footer {
   background-image: url('img/contact\ form\ background\ shapes.png');
@@ -543,9 +625,9 @@ footer {
   background-position-y: 21px;
   background-size: contain;
   background-color: #6070ff;
-  padding: 110px 16px;
   width: auto;
   align-items: center;
+  padding: 110px 0 45px 0;
   border-radius: 60px 0 0 0;
 }
 
@@ -553,8 +635,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto;
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .contact-me {
@@ -563,15 +645,24 @@ footer {
   line-height: 52px;
   color: #fff;
   margin: 10px 0;
+  margin-bottom: 5px;
+}
+
+.contact-me,
+.apply,
+.form-section button {
+  text-align: center;
 }
 
 .apply {
   font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
+  line-height: 28px;
+  color: #ebebff;
+  padding-bottom: 30px;
 }
 
 .form-section form {
@@ -646,11 +737,13 @@ footer {
     padding: 334px 260px 0 260px;
   }
 
-  .dev p {
-    width: 80%;
+  .nav .iconify,
+  .menu,
+  .close,
+  .nav-link {
+    display: none;
   }
 
-  .nav .iconify,
   .mobile-images,
   .daily-mobile,
   .tonic-version,
@@ -688,6 +781,17 @@ footer {
   .language-container {
     width: auto;
     justify-content: space-between;
+  }
+
+  .tonic-section,
+  .printing-section,
+  .facebook-section,
+  .uber-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section {
+    grid-template-columns: 40% 50%;
   }
 
   .frontend {
