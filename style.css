@@ -6,14 +6,13 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .logo-section {
@@ -68,7 +67,7 @@ body {
 }
 
 .hero {
-  background-image: url("img/Header\ bg.png");
+  background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -80,8 +79,7 @@ body {
 .dev {
   display: flex;
   flex-direction: column;
-  padding: 80px 0 0 0;
-  margin: 0 auto;
+  padding: 80px 0 5px 10px;
 }
 
 .dev h1 {
@@ -99,8 +97,7 @@ body {
   line-height: 28px;
   color: #344563;
   font-weight: 400;
-  text-align: left;
-  width: 50%;
+  width: 100%;
   margin-bottom: 12px;
 }
 
@@ -181,9 +178,10 @@ body {
 }
 
 .main-section {
-  padding: 70px 24px 114px 24px;
+  padding: 70px 24px 0 24px;
   background: #e5e5e5;
   justify-content: center;
+  align-items: center;
 }
 
 .tonic-section,
@@ -196,7 +194,7 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 24px;
   border-radius: 24px;
-  padding: 1.5rem;
+  padding: 0.5rem;
   margin: 73px 0;
 }
 
@@ -266,7 +264,8 @@ body {
 .uber-date h5 {
   width: 75px;
   height: 24px;
-  font-weight: 500;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: #344563;
@@ -323,7 +322,7 @@ button {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .see-project {
@@ -368,7 +367,6 @@ button:active {
 
 .uber-section {
   gap: 46px;
-  margin-bottom: 0;
 }
 
 .desktop-p {
@@ -389,17 +387,10 @@ button:active {
   display: none;
 }
 
-.container {
-  margin: 0;
-  background: #e5e5e5;
-}
-
 .about-section {
-  padding: 3rem;
-  border-radius: 0 60px 0 0;
-  background: #fff;
-  gap: 37px;
-  margin-top: 0;
+  border-top-right-radius: 60px;
+  align-items: center;
+  padding: 100px 5px;
 }
 
 .ube .career-container {
@@ -414,21 +405,22 @@ button:active {
   display: flex;
   align-items: center;
   color: #091e42;
-  margin-bottom: 0.7rem;
+  margin-bottom: 16px;
 }
 
 .career {
-  font-size: 16px;
+  width: auto;
+  font-size: 18px;
   line-height: 24px;
   color: #344563;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .social-career ul {
   padding: 0;
   display: flex;
   flex-direction: row;
-  margin: 0.8rem 0;
+  margin: 12px 0;
 }
 
 .resume {
@@ -436,21 +428,23 @@ button:active {
   width: -moz-fit-content;
   border-radius: 10px;
   border: 2px solid #396df2;
-  margin: 15px 3px;
+  margin: 15px 0;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 0.8rem;
+  padding: 12px;
   text-align: center;
   background: #fff;
   color: #396df2;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .language-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  width: 312px;
+  padding: 0 16px;
 }
 
 .langguage,
@@ -464,7 +458,8 @@ button:active {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #344563;
+  color: #000;
+  margin-bottom: 16px;
 }
 
 .icondown-language {
@@ -472,13 +467,15 @@ button:active {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 16px;
 }
 
 .icon-down {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png');
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
+  margin-bottom: 16px;
 }
 
 .frontend {
@@ -490,11 +487,13 @@ button:active {
 .elipse-name {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 14px;
   background: #f7f7f9;
   border-radius: 8px;
-  margin: 12px 0 0 0;
-  padding: 12px;
+  margin-bottom: 16px;
+  padding: 10px;
+  height: auto;
+  width: auto;
   align-items: center;
 }
 
@@ -503,14 +502,14 @@ button:active {
   font-size: 15px;
   line-height: 20px;
   align-items: center;
-  color: #253858;
+  color: #000;
 }
 
 .elipsejs,
 .elipsehtml,
 .elipsecss {
-  width: 48px;
-  height: 48px;
+  width: auto;
+  height: auto;
   align-items: center;
   border: 1px solid #fff;
 }
@@ -530,25 +529,24 @@ button:active {
 }
 
 .icon-right {
-  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
+  background-image: url('img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png');
   background-repeat: no-repeat;
   height: 25px;
   width: 25px;
-}
-
-.about-skill {
-  gap: 288px;
+  margin-bottom: 16px;
 }
 
 /* form-section */
 footer {
-  background-image: url("img/contact\ form\ background\ shapes.png");
+  background-image: url('img/contact\ form\ background\ shapes.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 21px;
   background-size: contain;
   background-color: #6070ff;
-  padding: 110px 0 45px 0;
+  padding: 110px 16px;
+  width: auto;
+  align-items: center;
   border-radius: 60px 0 0 0;
 }
 
@@ -556,8 +554,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  width: 50%;
+  margin: 50px auto;
+  width: 100%;
 }
 
 .contact-me {
@@ -565,42 +563,33 @@ footer {
   font-weight: 700;
   line-height: 52px;
   color: #fff;
-  margin-bottom: 5px;
-}
-
-.contact-me,
-.apply,
-.form-section button {
-  text-align: center;
+  margin: 10px 0;
 }
 
 .apply {
   font-size: 20px;
-  font-weight: bold;
   line-height: 28px;
   color: #ebebff;
-  padding-bottom: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 .form-section form {
   align-items: center;
-  width: 50%;
-}
-
-label {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  font-style: normal;
-  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-section input {
-  padding: 15px;
+  margin-bottom: 28px;
+  padding: 25px;
   border: none;
   outline: none;
+  font-weight: 400;
+  color: #172b4d;
+  line-height: 20px;
   background: #fff;
   border-radius: 5px;
   text-align: left;
@@ -608,6 +597,10 @@ label {
 }
 
 .form-section textarea {
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #172b4d;
   height: 170px;
   border-radius: 8px;
   background: #fff;
@@ -618,7 +611,10 @@ label {
 .form-section button {
   font-weight: 500;
   border-radius: 8px;
-  padding: 12px 16px;
+  width: fit-content;
+  padding: 14px;
+  font-size: 17px;
+  line-height: 24px;
   color: #1b31f0;
   border: 1px solid #fff;
   cursor: pointer;
@@ -645,6 +641,10 @@ label {
     padding: 334px 260px 0 260px;
   }
 
+  .dev p {
+    width: 80%;
+  }
+
   .nav .iconify,
   .mobile-images,
   .daily-mobile,
@@ -665,15 +665,24 @@ label {
     display: block;
   }
 
+  .main-section {
+    padding-top: 70px;
+  }
+
   .tonic-section,
   .printing-section,
   .facebook-section,
-  .uber-section {
+  .uber-section,
+  .about-section {
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
-  .about-section {
-    grid-template-columns: 40% 50%;
+  .language-container {
+    width: auto;
+    justify-content: space-between;
   }
 
   .frontend {
@@ -685,10 +694,10 @@ label {
   }
 
   .form-section {
-    width: 65%;
+    width: 50%;
   }
 
   .apply {
-    width: 55%;
+    width: 100%;
   }
 }

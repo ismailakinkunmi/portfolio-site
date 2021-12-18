@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,9 +23,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-214517820-1");
+      gtag('config', 'UA-214517820-1');
     </script>
 
     <title>Akins Portfolio</title>
@@ -111,7 +111,7 @@
         <div class="tonic">
           <h3>Tonic</h3>
           <div class="date">
-            <h3>CANOPY</h3>
+            <h5>CANOPY</h5>
             <img src="img/Counter.png" alt="" class="counter" />
             <p>Back End Dev</p>
             <img src="img/Counter.png" alt="" class="counter" />
@@ -135,8 +135,8 @@
           <h3>Multi-Post Stories</h3>
           <div class="printing-date">
             <ul class="change-content">
-              <li><h3 class="desktop">FACEBOOK</h3></li>
-              <li><h3 class="mobile">CANOPY</h3></li>
+              <li><h5 class="desktop">FACEBOOK</h5></li>
+              <li><h5 class="mobile">CANOPY</h5></li>
             </ul>
 
             <img src="img/Counter.png" alt="" class="counter" />
@@ -307,8 +307,6 @@
           </li>
         </ul>
       </section>
-    </main>
-    <section class="container">
       <section class="about-section">
         <div class="career-container">
           <h2 class="myself">
@@ -387,45 +385,42 @@
           </ul>
         </div>
       </section>
-    </section>
+    </main>
 
     <footer>
-      <section class="form-section">
+      <section class="form-section" id="contact">
         <h3 class="contact-me">Contact me</h3>
         <p class="apply">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/mqknzyow" method="POST">
-          <label for="username">Enter your full name here: </label>
+        <form
+          action="https://formspree.io/f/mqknzyow"
+          class="form"
+          method="POST"
+        >
           <input
             type="text"
-            id="username"
-            name="username"
-            placeholder="Enter your full name here"
+            placeholder="Please provide your name"
             required
             maxlength="30"
           />
-          <br /><br />
-          <label for="email">Enter your email address:</label>
+
           <input
             type="email"
-            id="email"
-            name="Email"
-            placeholder="Enter your email here"
+            name="email"
+            placeholder="Please provide your Email"
             required
           />
-          <br /><br />
-          <label for="usermessage">Enter your message here:</label>
+
           <textarea
             placeholder="Write your message here"
-            id="usermessage"
             name="usermsg"
             required
             maxlength="500"
           ></textarea>
-          <br />
+
           <button type="submit">Get It Touch</button>
         </form>
       </section>
@@ -434,5 +429,6 @@
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/validate.js"></script>
   </body>
 </html>
