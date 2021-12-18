@@ -631,6 +631,12 @@ footer {
   border-color: #2230d2;
 }
 
+.contact-form small {
+  text-align: left;
+  color: rgb(255, 0, 0);
+  width: 100%;
+}
+
 @media screen and (min-width: 992px) {
   .logo-section {
     padding: 25px 154px 0 155px;
