@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 /* eslint-disable indent */
 /* eslint-disable no-plusplus */
 const hamburger = document.querySelector('.menu');
