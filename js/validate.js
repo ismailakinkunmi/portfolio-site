@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   resetMsg();
   if (email.value !== email.value.toLowerCase()) {
-    showMsg(email, 'Please enter your email lowercase');
+    showMsg(email, 'Please enter your email in lowercase');
     showMsg;
     return false;
   }
