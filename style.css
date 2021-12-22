@@ -793,12 +793,12 @@ label {
 }
 
 .iconbtnlink {
-  font-size: 40px;
-  margin-right: 30px;
+  font-size: 30px;
+  margin-right: 20px;
 }
 
 .iconbtn {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 992px) {
