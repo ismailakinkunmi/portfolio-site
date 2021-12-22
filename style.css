@@ -692,6 +692,10 @@ footer {
   text-align: center;
 }
 
+.error {
+  color: red;
+}
+
 .form-section button {
   font-weight: 500;
   border-radius: 8px;
