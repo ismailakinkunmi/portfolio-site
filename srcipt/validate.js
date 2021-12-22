@@ -1,25 +1,19 @@
-const form = document.querySelector('#contact form');
-const { email } = form.elements;
+const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.form-section');
+const formElement = form.querySelectorAll('input, textarea');
 
-function showMsg(input, msg) {
-  const small = document.createElement('small');
-  small.classList.add('error');
-  small.textContent = msg;
-  form.insertBefore(small, input);
-}
+formElement.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    errorMessage.style.display = 'none';
+  });
+});
 
-function resetMsg() {
-  document.querySelectorAll('small').forEach((s) => s.remove());
-}
+document.getElementById('submit').addEventListener('click', (e) => {
+  const email = document.getElementById('email').value;
+  const emailValidation = /[a-z]/.test(email);
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  resetMsg();
-  if (email.value !== email.value.toLowerCase()) {
-    showMsg(email, 'The email should be lowercase');
-    showMsg;
-    return false;
+  if (emailValidation) {
+    errorMessage.style.display = 'block';
+    e.preventDefault();
   }
-  form.submit();
-  return true;
 });

@@ -758,7 +758,7 @@ footer {
   }
 
   .main-section {
-    padding-top: 70px;
+    padding: 70px 50px 0 50px;
   }
 
   .tonic-section,
