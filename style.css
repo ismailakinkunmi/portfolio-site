@@ -694,6 +694,7 @@ footer {
 
 .error {
   color: red;
+  font-weight: bold;
 }
 
 .form-section button {
