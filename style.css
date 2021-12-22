@@ -698,6 +698,17 @@ footer {
   width: 100%;
 }
 
+.error-message {
+  display: none;
+  text-align: center;
+}
+
+.error {
+  font-weight: bold;
+  color: #f00;
+  font-size: 18px;
+}
+
 .form-section button {
   font-weight: 500;
   border-radius: 8px;
@@ -720,12 +731,6 @@ footer {
   background: #2230d2;
   color: #fff;
   border-color: #2230d2;
-}
-
-.contact-form small {
-  text-align: left;
-  color: rgb(255, 0, 0);
-  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
