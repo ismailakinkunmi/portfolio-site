@@ -169,11 +169,12 @@ document.querySelectorAll('.see-project').forEach((btn) => {
             <div class="modal-btns">
               <a href="${project.gitLink}" class="btn github-link">
                 See live
-                <span class="iconify iconbtn" data-icon="bytesize:github"></span>                                                                      
+                <span class="iconify iconbtnlink" data-icon="line-md:external-link-rounded"></span>                                                                                    
               </a>
               <a href="${project.srcLink}" class="btn source-link">
-                See source                
-                <span class="iconify iconbtnlink" data-icon="cil:external-link"></span>                            
+                See source                                  
+                
+                <span class="iconify iconbtn" data-icon="teenyicons:github-solid"></span>                        
               </a>
             </div>
           </div>
