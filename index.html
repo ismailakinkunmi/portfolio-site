@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,28 +23,36 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-214517820-1");
+      gtag('config', 'UA-214517820-1');
     </script>
 
     <title>Akins Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <section class="logo-section">
-        <a href="#" class="my-logo">My Logo</a>
+      <div class="logo-section">
+        <a href="#" class="my-logo">Ismail</a>
         <nav class="nav">
-          <span class="iconify" data-icon="eva:menu-outline"></span>
           <ul class="nav-ul">
             <li><a href="#">Portfolio </a></li>
-            <li><a href="#">About </a></li>
-            <li><a href="#">Contact </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#contact">Contact </a></li>
           </ul>
         </nav>
-      </section>
+        <div class="menu"><span></span><span></span><span></span></div>
+        <!-- Mobile menu Section -->
+        <nav class="mobile-menu">
+          <ul>
+            <li><a class="menu-link" href="#tonic">Portfolio</a></li>
+            <li><a class="menu-link" href="#about">About</a></li>
+            <li><a class="menu-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <section class="hero">
+      <div class="hero">
         <div class="dev">
           <h1>I’m Ismail <br />Glad to see you!</h1>
           <p>
@@ -86,230 +94,15 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </header>
 
-    <main class="main-section">
-      <section class="tonic-section">
-        <ul class="images">
-          <li>
-            <img
-              src="img/card-Portfolio.png"
-              alt="nature card"
-              class="desktop-images"
-            />
-          </li>
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio.png"
-              alt="tarnner christensen from high school dropout to product designer at facebook"
-              class="mobile-images"
-            />
-          </li>
-        </ul>
+    <main class="main-section"></main>
 
-        <div class="tonic">
-          <h3>Tonic</h3>
-          <div class="date">
-            <h3>CANOPY</h3>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <p>Back End Dev</p>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <p>2015</p>
-          </div>
-          <p class="daily">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
-          </div>
-          <button class="see-project">See Project</button>
-        </div>
-      </section>
+    <div class="pop"></div>
 
-      <section class="printing-section">
-        <div class="printing">
-          <h3>Multi-Post Stories</h3>
-          <div class="printing-date">
-            <ul class="change-content">
-              <li><h3 class="desktop">FACEBOOK</h3></li>
-              <li><h3 class="mobile">CANOPY</h3></li>
-            </ul>
-
-            <img src="img/Counter.png" alt="" class="counter" />
-            <ul class="change-content">
-              <li><p class="desktop-p">Full Stack Dev</p></li>
-              <li><p class="mobile-p">Back End Dev</p></li>
-            </ul>
-
-            <img src="img/Counter.png" alt="" class="counter" />
-            <p>2015</p>
-          </div>
-          <ul class="change-content">
-            <li>
-              <p class="Experiment">
-                Experimental content creation feature that allows users to add
-                to an existing story over the course of a day without spamming
-                their friends.
-              </p>
-            </li>
-            <li>
-              <p class="daily-mobile">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </li>
-          </ul>
-
-          <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
-          </div>
-          <button class="see-project">See Project</button>
-        </div>
-
-        <ul class="images">
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio3.png"
-              alt="professional art printing card"
-              class="desktop-images"
-            />
-          </li>
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio.png"
-              alt="uber available card"
-              class="mobile-images"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section class="facebook-section">
-        <ul class="images">
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio.png"
-              alt="tarnner christensen from high school dropout to product designer at facebook"
-              class="desktop-images"
-            />
-          </li>
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio2.png"
-              alt="tonic card"
-              class="mobile-images"
-            />
-          </li>
-        </ul>
-        <div class="facebook">
-          <ul class="change-content">
-            <li><h3 class="text">Facebook 360</h3></li>
-            <li><h3 class="tonic-version">Tonic</h3></li>
-          </ul>
-          <div class="printing-date">
-            <ul class="change-content">
-              <li><h3 class="desktop">FACEBOOK</h3></li>
-              <li><h3 class="mobile">CANOPY</h3></li>
-            </ul>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <ul class="change-content">
-              <li><p class="desktop-p">Full Stack Dev</p></li>
-              <li><p class="mobile-p">Back End Dev</p></li>
-            </ul>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <p>2015</p>
-          </div>
-          <ul class="change-content">
-            <li>
-              <p class="Experiment">
-                Exploring the future of media in Facebook's first Virtual
-                Reality app; a place to discover and enjoy 360 photos and videos
-                on Gear VR.
-              </p>
-            </li>
-            <li>
-              <p class="daily-mobile">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </li>
-          </ul>
-          <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
-          </div>
-          <button class="see-project">See Project</button>
-        </div>
-      </section>
-
-      <section class="uber-section">
-        <div class="uber">
-          <ul class="change-content">
-            <li><h3 class="text">Uber Navigation</h3></li>
-            <li><h3 class="tonic-version">Multi-Post Stories</h3></li>
-          </ul>
-          <div class="uber-date">
-            <ul class="change-content">
-              <li><h3 class="desktop">Uber</h3></li>
-              <li><h3 class="mobile">CANOPY</h3></li>
-            </ul>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <div class="change-content">
-              <p class="desktop-p">Lead Developer</p>
-              <p class="mobile-p">Back End Dev</p>
-            </div>
-            <img src="img/Counter.png" alt="" class="counter" />
-            <p class="uber-year">2018</p>
-          </div>
-          <ul class="change-content">
-            <li>
-              <p class="uber-smart">
-                A smart assistant to make driving more safe, efficient, and fun
-                by unlocking your most expensive computer: your car.
-              </p>
-            </li>
-            <li>
-              <p class="daily-mobile">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </li>
-          </ul>
-
-          <div>
-            <button>html</button>
-            <button>css</button>
-            <button class="javascript">javaScript</button>
-          </div>
-          <button class="see-project">See Project</button>
-        </div>
-        <ul class="images">
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio1.png"
-              alt="uber available card"
-              class="desktop-images"
-            />
-          </li>
-          <li>
-            <img
-              src="img/Snapshoot-Portfolio3.png"
-              alt="multipost stories card"
-              class="mobile-images"
-            />
-          </li>
-        </ul>
-      </section>
-    </main>
-    <section class="container">
-      <section class="about-section">
+    <div class="container">
+      <section class="about-section" id="about">
         <div class="career-container">
           <h2 class="myself">
             About<br />
@@ -351,7 +144,7 @@
               </li>
             </ul>
           </div>
-          <button class="resume">Get my resume</button>
+          <button type="button" class="resume">Get my resume</button>
         </div>
 
         <div class="language-container">
@@ -387,10 +180,10 @@
           </ul>
         </div>
       </section>
-    </section>
+    </div>
 
     <footer>
-      <section class="form-section">
+      <section class="form-section" id="contact">
         <h3 class="contact-me">Contact me</h3>
         <p class="apply">
           If you have an application you are interested in developing, a feature
@@ -430,6 +223,7 @@
         </form>
       </section>
     </footer>
+    <script src="js/main.js"></script>
     <script
       src="https://code.iconify.design/2/2.0.4/iconify.min.js"
       crossorigin="anonymous"
