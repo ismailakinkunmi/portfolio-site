@@ -2,6 +2,8 @@
 /* eslint-disable indent */
 /* eslint-disable no-plusplus */
 
+// mobile-menu
+
 const hamburger = document.querySelector('.menu');
 const links = document.querySelectorAll('.mobile-menu a');
 hamburger.addEventListener('click', () => {
@@ -15,8 +17,7 @@ hamburger.addEventListener('click', () => {
 });
 
 links.forEach((a) => {
-  a.addEventListener('click', (e) => {
-    e.preventDefault();
+  a.addEventListener('click', () => {
     hamburger.classList.remove('active');
     document.querySelector('.mobile-menu').style.display = 'none';
   });

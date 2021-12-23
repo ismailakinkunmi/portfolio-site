@@ -15,11 +15,11 @@ body {
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  padding-left: 12px;
+  padding: 0 12px;
 }
 
 .logo-section {
-  padding: 24px 12px;
+  padding: 24px 0;
   justify-content: space-between;
 }
 
@@ -143,13 +143,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .dev {
   display: flex;
   flex-direction: column;
-  padding: 80px 0 0 0;
+  padding-top: 80px;
   margin: 0 auto;
 }
 
@@ -164,8 +163,8 @@ body {
 }
 
 .dev p {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
   font-weight: 400;
   text-align: left;
@@ -250,7 +249,7 @@ body {
 }
 
 .main-section {
-  padding: 70px 12px 114px 12px;
+  padding: 70px 0 70px 12px;
   background: #e5e5e5;
   justify-content: center;
   width: auto;
@@ -602,10 +601,6 @@ button:active {
   background-repeat: no-repeat;
   height: 25px;
   width: 25px;
-}
-
-.about-skill {
-  gap: 288px;
 }
 
 /* form-section */
