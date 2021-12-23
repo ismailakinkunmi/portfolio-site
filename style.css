@@ -18,10 +18,12 @@ body {
   border-bottom-left-radius: 80px;
   margin: 0 15px;
   padding-bottom: 200px;
+  width: fit-content;
+  padding-left: 12px;
 }
 
 .logo-section {
-  padding: 24px;
+  padding: 24px 12px;
   justify-content: space-between;
 }
 
@@ -31,7 +33,7 @@ body {
   line-height: 20px;
   align-items: center;
   text-align: center;
-  color: #00f;
+  color: #6070ff;
 }
 
 .logo-section a {
@@ -118,6 +120,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 100vh;
 }
@@ -140,6 +143,7 @@ body {
   background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
   background-size: contain;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,6 +261,10 @@ body {
   background: #e5e5e5;
   justify-content: center;
   align-items: center;
+  padding: 70px 12px 114px 12px;
+  background: #e5e5e5;
+  justify-content: center;
+  width: auto;
 }
 
 .tonic-section,
@@ -269,7 +277,7 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 24px;
   border-radius: 24px;
-  padding: 1.5rem;
+  padding: 24px 12px;
   margin: 73px 0;
 }
 
@@ -329,7 +337,7 @@ body {
 .uber-date {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+ gap: 8px;
   padding-bottom: 32px;
 }
 
@@ -460,6 +468,12 @@ button:active {
   border-top-right-radius: 60px;
   align-items: center;
   padding: 100px 12px;
+  padding: 50px 6px 50px 12px;
+  border-radius: 0 60px 0 0;
+  background: #fff;
+  gap: 37px;
+  width: auto;
+  margin-top: 0;
 }
 
 .ube .career-container {
@@ -483,6 +497,8 @@ button:active {
   line-height: 24px;
   color: #344563;
   margin-bottom: 16px;
+  width: fit-content;
+  padding-right: 24px;
 }
 
 .social-career ul {
@@ -514,6 +530,7 @@ button:active {
   width: 312px;
   padding: 0 16px;
   gap: 12px;
+  width: auto;
 }
 
 .langguage,
@@ -550,13 +567,13 @@ button:active {
 .frontend {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .elipse-name {
   display: flex;
   flex-direction: row;
-  gap: 14px;
+  gap: 12px 10px;
   background: #f7f7f9;
   border-radius: 8px;
   height: auto;
@@ -721,6 +738,104 @@ footer {
   border-color: #2230d2;
 }
 
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #c1c7d0d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  width: 90%;
+  max-height: 90%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  margin: 0;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #6070ff;
+}
+
+.modal > img {
+  width: 100%;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  width: 100%;
+}
+
+.modal-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content ul {
+  margin: 0 0 16px 0;
+}
+
+.modal-btns {
+  display: flex;
+  padding-top: 20px;
+  border-top: 1px solid #ebecf0;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 16px;
+  margin: 0;
+  gap: 14px;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px #6070ff solid;
+  color: #6070ff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.iconbtnlink {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.iconbtn {
+  font-size: 30px;
+}
+
 @media screen and (min-width: 992px) {
   .header {
     border-bottom-left-radius: 120px;
@@ -741,12 +856,17 @@ footer {
     display: none;
   }
 
+  .nav-link,
   .mobile-images,
   .daily-mobile,
   .tonic-version,
   .mobile,
   .mobile-p {
     display: none;
+  }
+
+  .dev {
+    padding: 334px 260px 0 260px;
   }
 
   .nav-ul a,
@@ -820,5 +940,15 @@ footer {
 
   .apply {
     width: 80%;
+  }
+
+  .modal-content {
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+
+  .modal-content ul,
+  .modal-content p {
+    margin-top: 50px;
   }
 }
