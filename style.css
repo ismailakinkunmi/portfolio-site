@@ -138,7 +138,7 @@ body {
 .hero {
   background-image: url('img/Header\ bg.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   width: fit-content;
   display: flex;
   flex-direction: column;
