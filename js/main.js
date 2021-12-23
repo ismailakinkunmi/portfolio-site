@@ -17,7 +17,7 @@ hamburger.addEventListener('click', () => {
 });
 
 links.forEach((a) => {
-  a.addEventListener('click', (e) => {
+  a.addEventListener('click', () => {
     hamburger.classList.remove('active');
     document.querySelector('.mobile-menu').style.display = 'none';
   });

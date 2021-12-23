@@ -16,7 +16,6 @@ body {
   justify-content: center;
   width: fit-content;
   padding: 0 12px;
-  /* padding-left: 12px; */
 }
 
 .logo-section {
@@ -170,7 +169,6 @@ body {
   font-weight: 400;
   text-align: left;
   width: 100%;
-
   margin-bottom: 12px;
 }
 
