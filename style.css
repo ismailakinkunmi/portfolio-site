@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: #e5e5e5;
 }
 
 .header {
@@ -16,6 +17,7 @@ body {
   justify-content: center;
   width: fit-content;
   padding: 0 12px;
+  border-bottom-left-radius: 60px;
 }
 
 .logo-section {
@@ -193,7 +195,7 @@ body {
 .social-career ul {
   list-style: none;
   gap: 10px;
-  padding: 1rem 0 18rem 0;
+  padding: 16px 0 150px 0;
 }
 
 .social li,
@@ -249,7 +251,7 @@ body {
 }
 
 .main-section {
-  padding: 70px 0 70px 12px;
+  padding: 70px 24px;
   background: #e5e5e5;
   justify-content: center;
   width: auto;
@@ -453,12 +455,13 @@ button:active {
 }
 
 .container {
-  margin: 0;
-  background: #e5e5e5;
+  padding-bottom: 100px;
+  background: #fff;
+  margin-top: 0;
 }
 
 .about-section {
-  padding: 50px 6px 50px 12px;
+  padding: 50px 14px;
   border-radius: 0 60px 0 0;
   background: #fff;
   gap: 37px;
@@ -478,7 +481,7 @@ button:active {
   display: flex;
   align-items: center;
   color: #091e42;
-  margin-bottom: 0.7rem;
+  margin-bottom: 12px;
 }
 
 .career {
@@ -486,8 +489,6 @@ button:active {
   line-height: 24px;
   color: #344563;
   margin-bottom: 16px;
-  width: fit-content;
-  padding-right: 24px;
 }
 
 .social-career ul {
@@ -532,6 +533,7 @@ button:active {
   line-height: 24px;
   align-items: center;
   color: #344563;
+  padding-right: 24px;
 }
 
 .icondown-language {
@@ -613,6 +615,7 @@ footer {
   background-color: #6070ff;
   padding: 110px 0 45px 0;
   border-radius: 60px 0 0 0;
+  margin-top: 50px;
 }
 
 .form-section {
@@ -620,7 +623,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 
 .contact-me {
@@ -628,46 +631,38 @@ footer {
   font-weight: 700;
   line-height: 52px;
   color: #fff;
-  margin-bottom: 5px;
-}
-
-.contact-me,
-.apply,
-.form-section button {
-  text-align: center;
 }
 
 .apply {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 28px;
   color: #ebebff;
-  padding-bottom: 30px;
+  margin: 12px 24px 40px 24px;
 }
 
 .form-section form {
-  align-items: center;
   width: 70%;
 }
 
 .form-section input {
-  padding: 15px;
   border: none;
   outline: none;
   background: #fff;
   border-radius: 5px;
   text-align: left;
   width: 100%;
-  margin-bottom: 20px;
+  padding: 24px;
+  margin-bottom: 30px;
 }
 
 .form-section textarea {
   height: 170px;
   border-radius: 8px;
   background: #fff;
-  padding: 24px 15px 0 16px;
+  padding: 24px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .form-section button {
@@ -789,6 +784,10 @@ footer {
   font-size: 30px;
 }
 
+small {
+  color: #f00;
+}
+
 @media screen and (min-width: 992px) {
   .logo-section {
     padding: 25px 154px 0 155px;
@@ -807,6 +806,10 @@ footer {
 
   .dev {
     padding: 334px 260px 0 260px;
+  }
+
+  .main-section {
+    padding: 70px 142px;
   }
 
   .nav-ul a,
@@ -828,7 +831,20 @@ footer {
   }
 
   .about-section {
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 32% 60%;
+    justify-content: space-between;
+  }
+
+  .career-container {
+    margin-right: 57px;
+  }
+
+  .language-container {
+    margin-right: 150px;
+  }
+
+  .container {
+    padding: 0 142px;
   }
 
   .frontend {
@@ -841,6 +857,10 @@ footer {
 
   .form-section {
     width: 50%;
+  }
+
+  .form-section form {
+    text-align: center;
   }
 
   .apply {
