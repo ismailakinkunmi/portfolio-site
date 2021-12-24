@@ -190,8 +190,11 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/mqknzyow" method="POST">
-          <label for="username">Name </label>
+        <form
+          action="https://formspree.io/f/mqknzyow"
+          method="POST"
+          class="form"
+        >
           <input
             type="text"
             id="username"
@@ -200,17 +203,15 @@
             required
             maxlength="30"
           />
-          <br /><br />
-          <label for="email">Email</label>
+
           <input
             type="email"
             id="email"
-            name="Email"
+            name="email"
             placeholder="Enter your email here"
             required
           />
 
-          <label for="usermessage">Message</label>
           <textarea
             placeholder="Write your message here"
             id="usermessage"
@@ -218,8 +219,8 @@
             required
             maxlength="500"
           ></textarea>
-          <br />
-          <button type="submit">Get It Touch</button>
+
+          <button type="submit" id="getBtn">Get It Touch</button>
         </form>
       </section>
     </footer>
