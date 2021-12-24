@@ -198,6 +198,7 @@ function showMsg(input, msg) {
   const small = document.createElement('small');
   small.classList.add('error');
   small.textContent = msg;
+  input = document.getElementById('#getBtn');
   form.insertBefore(small, input);
 }
 
