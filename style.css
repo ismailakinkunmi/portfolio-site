@@ -650,16 +650,6 @@ footer {
   width: 70%;
 }
 
-label {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fff;
-  font-weight: bold;
-  text-align: left;
-  font-style: normal;
-  margin-bottom: 5px;
-}
-
 .form-section input {
   padding: 15px;
   border: none;
@@ -668,6 +658,7 @@ label {
   border-radius: 5px;
   text-align: left;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-section textarea {
@@ -676,6 +667,7 @@ label {
   background: #fff;
   padding: 24px 15px 0 16px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-section button {
