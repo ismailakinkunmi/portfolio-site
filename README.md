@@ -10,7 +10,7 @@ the contact form.
 
 1. copy the Url from my github account
 2. clone the below url to your local machine
-3. git@github.com:ismailakinkunmi/portfolio-site.git
+3. git@github.com:ismailakinkunmi/portfolio.git
 
 #### Prerequisites
 
@@ -21,7 +21,7 @@ the contact form.
 
 #### Built With
 
-HTML & CSS
+HTML, CSS & Javascript
 
 #### technology used
 
@@ -37,7 +37,7 @@ This site was built using [GitHub Pages](https://ismailakinkunmi.github.io/portf
 
 1. Name: Adekunle Akinkunmi Ismail
 2. Github: @<https://github.com/ismailakinkunmi>
-3. LinkedIn: @<https://www.linkedin.com/in/ismail-akinkunmi-adekunle-b810aa155/>
+3. LinkedIn: @<https://www.linkedin.com/in/adismail4/>
 
 #### Acknowledgments
 
