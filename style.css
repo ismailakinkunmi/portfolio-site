@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .hero {
-  background-image: url('img/Header\ bg.png');
+  background-image: url("img/Header\ bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: fit-content;
@@ -392,7 +392,7 @@ button {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .see-project {
@@ -511,7 +511,7 @@ button:active {
   text-align: center;
   background: #fff;
   color: #396df2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .language-container {
@@ -544,7 +544,7 @@ button:active {
 }
 
 .icon-down {
-  background-image: url('img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png');
+  background-image: url("img/Icon\ -\ Chevron\ -\ Down\ -\ Larger.png");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -599,7 +599,7 @@ button:active {
 }
 
 .icon-right {
-  background-image: url('img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png');
+  background-image: url("img/Icon\ -\ Chevron\ -\ Right\ -\ Larger.png");
   background-repeat: no-repeat;
   height: 25px;
   width: 25px;
@@ -607,7 +607,7 @@ button:active {
 
 /* form-section */
 footer {
-  background-image: url('img/contact\ form\ background\ shapes.png');
+  background-image: url("img/contact\ form\ background\ shapes.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 21px;
