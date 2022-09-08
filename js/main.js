@@ -4,22 +4,22 @@
 
 // mobile-menu
 
-const hamburger = document.querySelector('.menu');
-const links = document.querySelectorAll('.mobile-menu a');
-hamburger.addEventListener('click', () => {
-  if (hamburger.classList.contains('active')) {
-    hamburger.classList.remove('active');
-    document.querySelector('.mobile-menu').style.display = 'none';
+const hamburger = document.querySelector(".menu");
+const links = document.querySelectorAll(".mobile-menu a");
+hamburger.addEventListener("click", () => {
+  if (hamburger.classList.contains("active")) {
+    hamburger.classList.remove("active");
+    document.querySelector(".mobile-menu").style.display = "none";
   } else {
-    hamburger.classList.add('active');
-    document.querySelector('.mobile-menu').style.display = 'block';
+    hamburger.classList.add("active");
+    document.querySelector(".mobile-menu").style.display = "block";
   }
 });
 
 links.forEach((a) => {
-  a.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    document.querySelector('.mobile-menu').style.display = 'none';
+  a.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    document.querySelector(".mobile-menu").style.display = "none";
   });
 });
 
@@ -28,55 +28,62 @@ links.forEach((a) => {
 const cardObject = [
   {
     id: 1,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio.png',
-    imageDesktop: './img/card-Portfolio.png',
-    details: ['Back End Dev', '2015'],
+    title: "Tonic",
+    subTitle: "CANOPY",
+    imageMobile: "./img/Snapshoot-Portfolio.png",
+    imageDesktop: "./img/card-Portfolio.png",
+    details: ["Back End Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    langs: ["html", "css", "javaScript"],
+    gitLink: "#",
+    srcLink: "#",
   },
   {
     id: 2,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio.png',
-    imageDesktop: './img/Snapshoot-Portfolio3.png',
-    details: ['Back End Dev', '2015'],
+    title: "Budget App",
+    subTitle: "",
+    imageMobile:
+      "https://user-images.githubusercontent.com/37457094/188992488-27c28402-4bc7-498c-9477-3f560060a2dd.png",
+    imageDesktop:
+      "https://user-images.githubusercontent.com/37457094/188992488-27c28402-4bc7-498c-9477-3f560060a2dd.png",
+    details: ["Back End Dev", "2022"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      "This is a ruby on rails mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+    langs: ["ruby", "ruby on rails", "css"],
+    gitLink: "https://budgetapp-1.herokuapp.com/",
+    srcLink: "https://github.com/ismailakinkunmi/rails-budget-app",
   },
   {
     id: 3,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio2.png',
-    imageDesktop: './img/Snapshoot-Portfolio.png',
-    details: ['Back End Dev', '2015'],
+    title: "Space Travlers' Hub",
+    subTitle: "",
+    imageMobile:
+      "https://user-images.githubusercontent.com/37457094/189049737-69d1bb57-cd15-477a-af04-68771c9d7654.png",
+    imageDesktop:
+      "https://user-images.githubusercontent.com/37457094/189049737-69d1bb57-cd15-477a-af04-68771c9d7654.png",
+    details: ["Front End Dev", "2022"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      "Space Travelers' Hub is working with the real live data from the SpaceX API.",
+    langs: ["html", "css", "React", "Redux"],
+    gitLink: "#",
+    srcLink: "https://github.com/ismailakinkunmi/space-travelers-hub",
   },
   {
     id: 4,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio3.png',
-    imageDesktop: './img/Snapshoot-Portfolio1.png',
-    details: ['Back End Dev', '2015'],
+    title: "World-pandemic",
+    subTitle: "Covid-19",
+    imageMobile:
+      "https://user-images.githubusercontent.com/37457094/170477032-5b19dd99-5ba1-422b-a486-405167302610.png",
+
+    imageDesktop:
+      "https://user-images.githubusercontent.com/37457094/170477032-5b19dd99-5ba1-422b-a486-405167302610.png",
+    details: ["Front End Dev", "2022"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      "The application allow users to check covid-19 daily updated cases from around the world.It is working with the real live data disease.sh - Open Disease Data API. ",
+    langs: ["html", "css", "react", "redux"],
+    gitLink: "https://covid19-world-panemic.herokuapp.com/",
+    srcLink: "https://github.com/ismailakinkunmi/covid-19-world-pandemic",
   },
 ];
 
@@ -84,7 +91,7 @@ for (let i = 0; i < cardObject.length; i++) {
   const element = cardObject[i];
 
   document.querySelector(
-    '.main-section'
+    ".main-section"
   ).innerHTML += `<section class="tonic-section" id="tonic">
         <ul class="images">
           <li>
@@ -114,7 +121,7 @@ for (let i = 0; i < cardObject.length; i++) {
                     ) => ` <img src="img/Counter.png" alt="" class="counter" />
             <p>${x}</p>`
                   )
-                  .join('')}           
+                  .join("")}           
           </div>
           <p class="daily">
            ${element.description}
@@ -123,19 +130,19 @@ for (let i = 0; i < cardObject.length; i++) {
           <div>           
             ${element.langs
               .map((x) => `<button type="button">${x}</button>`)
-              .join('')}           
+              .join("")}           
           </div>
           <button id='${element.id}' class="see-project">See Project</button>
         </div>
       </section>`;
 }
 
-document.querySelectorAll('.see-project').forEach((btn) => {
-  btn.addEventListener('click', () => {
+document.querySelectorAll(".see-project").forEach((btn) => {
+  btn.addEventListener("click", () => {
     const id = Number(btn.id);
     const project = cardObject.find((p) => p.id === id);
 
-    document.querySelector('.pop').innerHTML = `
+    document.querySelector(".pop").innerHTML = `
       
     <section class="modal-wrapper">
       <div class="modal">
@@ -154,7 +161,7 @@ document.querySelectorAll('.see-project').forEach((btn) => {
                     ) => ` <img src="img/Counter.png" alt="" class="counter" />
             <p>${x}</p>`
                   )
-                  .join('')}           
+                  .join("")}           
           </div>
         <img src="${project.imageDesktop}"/>
         <div class="modal-content">
@@ -165,7 +172,7 @@ document.querySelectorAll('.see-project').forEach((btn) => {
              <div>           
             ${project.langs
               .map((x) => `<button type="button">${x}</button>`)
-              .join('')}           
+              .join("")}           
           </div>
             <div class="modal-btns">
               <a href="${project.gitLink}" class="btn github-link">
@@ -184,33 +191,33 @@ document.querySelectorAll('.see-project').forEach((btn) => {
     </section>  
 
     `;
-    document.querySelector('.close-modal').addEventListener('click', () => {
-      document.querySelector('.modal-wrapper').remove();
+    document.querySelector(".close-modal").addEventListener("click", () => {
+      document.querySelector(".modal-wrapper").remove();
     });
   });
 });
 
 // validation
-const form = document.querySelector('#contact form');
+const form = document.querySelector("#contact form");
 const { email } = form.elements;
 
 function showMsg(input, msg) {
-  const small = document.createElement('small');
-  small.classList.add('error');
+  const small = document.createElement("small");
+  small.classList.add("error");
   small.textContent = msg;
-  input = document.getElementById('#getBtn');
+  input = document.getElementById("#getBtn");
   form.insertBefore(small, input);
 }
 
 function resetMsg() {
-  document.querySelectorAll('small').forEach((s) => s.remove());
+  document.querySelectorAll("small").forEach((s) => s.remove());
 }
 
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   resetMsg();
   if (email.value !== email.value.toLowerCase()) {
-    showMsg(email, 'Please enter your email in lowercase');
+    showMsg(email, "Please enter your email in lowercase");
     return false;
   }
   form.submit();
