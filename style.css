@@ -803,10 +803,6 @@ small {
 }
 
 @media screen and (min-width: 992px) {
-  .dev {
-    margin: -150px auto 12px auto;
-  }
-
   .logo-section {
     padding: 25px 154px 0 155px;
   }
@@ -823,6 +819,7 @@ small {
   }
 
   .dev {
+    margin: -150px auto 12px auto;
     padding: 334px 260px 0 260px;
   }
 
