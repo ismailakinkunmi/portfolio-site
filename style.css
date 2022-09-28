@@ -65,8 +65,9 @@ body {
   text-align: center;
   line-height: 20px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   display: none;
+  cursor: pointer;
 }
 
 .menu {
@@ -819,8 +820,8 @@ small {
   }
 
   .dev {
-    margin: -150px auto 12px auto;
-    padding: 334px 260px 0 260px;
+    margin: -1px auto 12px auto;
+    padding: 200px 260px 0 260px;
   }
 
   .nav-ul a,
