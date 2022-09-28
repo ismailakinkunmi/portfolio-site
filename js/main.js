@@ -29,7 +29,7 @@ const cardObject = [
   {
     id: 1,
     title: "Tonic",
-    subTitle: "CANOPY",
+    subTitle: "",
     imageMobile: "./img/Snapshoot-Portfolio.png",
     imageDesktop: "./img/card-Portfolio.png",
     details: ["Back End Dev", "2015"],
@@ -71,8 +71,8 @@ const cardObject = [
   },
   {
     id: 4,
-    title: "World-pandemic",
-    subTitle: "Covid-19",
+    title: "World-pandemic: Covid-19",
+    subTitle: "",
     imageMobile:
       "https://user-images.githubusercontent.com/37457094/170477032-5b19dd99-5ba1-422b-a486-405167302610.png",
 
