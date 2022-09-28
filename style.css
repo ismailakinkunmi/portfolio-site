@@ -195,7 +195,7 @@ body {
 .social-career ul {
   list-style: none;
   gap: 10px;
-  padding: 16px 0 150px 0;
+  padding: 16px 0 100px 0;
 }
 
 .social li,
@@ -615,7 +615,7 @@ footer {
   background-color: #6070ff;
   padding: 110px 0 45px 0;
   border-radius: 60px 0 0 0;
-  margin-top: 50px;
+  margin-top: -200px;
 }
 
 .form-section {
@@ -791,6 +791,10 @@ small {
 }
 
 @media screen and (min-width: 992px) {
+  .dev {
+    margin: -150px auto 12px auto;
+  }
+
   .logo-section {
     padding: 25px 154px 0 155px;
   }
@@ -810,10 +814,6 @@ small {
     padding: 334px 260px 0 260px;
   }
 
-  .main-section {
-    padding: 70px 142px;
-  }
-
   .nav-ul a,
   .desktop-images,
   .tonic h3,
@@ -829,24 +829,26 @@ small {
   .printing-section,
   .facebook-section,
   .uber-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
   }
 
   .about-section {
-    grid-template-columns: 32% 60%;
+    grid-template-columns: 45% 55%;
     justify-content: space-between;
   }
 
   .career-container {
-    margin-right: 57px;
+    margin-right: 20px;
   }
 
   .language-container {
-    margin-right: 150px;
+    padding-right: 24px;
   }
 
   .container {
-    padding: 0 142px;
+    padding: 0 12px 100px 12px;
+    margin: -70px 12px 0 12px;
+    background-color: #fff;
   }
 
   .frontend {
