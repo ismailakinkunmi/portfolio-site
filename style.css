@@ -195,7 +195,7 @@ body {
 .social-career ul {
   list-style: none;
   gap: 10px;
-  padding: 16px 0 150px 0;
+  padding: 16px 0 100px 0;
 }
 
 .social li,
@@ -205,10 +205,14 @@ body {
   justify-content: center;
 }
 
+.social .iconify,
+.social-career .iconify {
+  transition: all 1s linear;
+}
+
 .social .iconify:hover,
 .social-career .iconify:hover {
-  animation-name: bounce;
-  animation-duration: 1s;
+  background-color: #396df2dc;
 }
 
 @keyframes bounce {
@@ -403,14 +407,14 @@ button {
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
-  background: #fff;
+  background-color: #fff;
+  transition: all 3s ease;
 }
 
 button:hover {
-  background: #396df2dc;
+  background-color: #396df2dc;
   color: #fff;
-  box-shadow: 0 5px #666;
-  transform: translateY(0.5rem);
+  transform: translateY(1px);
 }
 
 button:active {
@@ -615,7 +619,7 @@ footer {
   background-color: #6070ff;
   padding: 110px 0 45px 0;
   border-radius: 60px 0 0 0;
-  margin-top: 50px;
+  margin-top: -200px;
 }
 
 .form-section {
@@ -638,22 +642,27 @@ footer {
   font-weight: 400;
   line-height: 28px;
   color: #ebebff;
-  margin: 12px 24px 40px 24px;
+  margin: 24px;
 }
 
 .form-section form {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-section input {
   border: none;
   outline: none;
+  font-size: 16px;
+  height: 45px;
   background: #fff;
   border-radius: 5px;
   text-align: left;
   width: 100%;
-  padding: 24px;
-  margin-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 24px;
 }
 
 .form-section textarea {
@@ -663,20 +672,23 @@ footer {
   padding: 24px;
   width: 100%;
   margin-bottom: 14px;
+  outline: none;
 }
 
 .form-section button {
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 12px 16px;
   color: #1b31f0;
-  border: 1px solid #fff;
+  border: 1px solid #ccc;
   cursor: pointer;
-  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 2s linear;
 }
 
 .form-section button:hover {
-  background: #1b31f0;
+  background-color: #396df2dc;
   color: #fff;
 }
 
@@ -807,11 +819,8 @@ small {
   }
 
   .dev {
+    margin: -150px auto 12px auto;
     padding: 334px 260px 0 260px;
-  }
-
-  .main-section {
-    padding: 70px 142px;
   }
 
   .nav-ul a,
@@ -829,24 +838,27 @@ small {
   .printing-section,
   .facebook-section,
   .uber-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 59% 39%;
+    padding-left: 2%;
   }
 
   .about-section {
-    grid-template-columns: 32% 60%;
+    grid-template-columns: 45% 55%;
     justify-content: space-between;
   }
 
   .career-container {
-    margin-right: 57px;
+    margin-right: 20px;
   }
 
   .language-container {
-    margin-right: 150px;
+    padding-right: 24px;
   }
 
   .container {
-    padding: 0 142px;
+    padding: 0 12px 100px 12px;
+    margin: -70px 12px 0 12px;
+    background-color: #fff;
   }
 
   .frontend {
@@ -858,7 +870,7 @@ small {
   }
 
   .form-section {
-    width: 50%;
+    width: 60%;
   }
 
   .form-section form {
@@ -866,7 +878,7 @@ small {
   }
 
   .apply {
-    width: 55%;
+    width: 62%;
   }
 
   .modal-content {
@@ -877,5 +889,23 @@ small {
   .modal-content ul,
   .modal-content p {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-container {
+    padding: 0 8px;
+  }
+
+  .main-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tonic-section,
+  .printing-section,
+  .facebook-section,
+  .uber-section {
+    padding: 24px 0;
   }
 }
