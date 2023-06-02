@@ -28,34 +28,50 @@ links.forEach((a) => {
 const cardObject = [
   {
     id: 1,
-    title: "Tonic",
+    title: "Leaderboard",
     subTitle: "",
     imageMobile: "./img/Snapshoot-Portfolio.png",
-    imageDesktop: "./img/card-Portfolio.png",
-    details: ["Back End Dev", "2015"],
+    imageDesktop:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/37457094/242920147-219af2ea-df75-4391-9267-95f7d2729940.png",
+    details: ["Front End Dev", "2022"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "The leaderboard website displays scores submitted by different users and all data are preserved in local storage ",
     langs: ["html", "css", "javaScript"],
-    gitLink: "#",
-    srcLink: "#",
+    gitLink: "https://ismailakinkunmi.github.io/Leaderboard/dist/",
+    srcLink: "https://github.com/ismailakinkunmi/Leaderboard",
   },
   {
     id: 2,
-    title: "Budget App",
-    subTitle: "",
+    title: "Capstone",
+    subTitle: "Youth week",
     imageMobile:
-      "https://user-images.githubusercontent.com/37457094/188992488-27c28402-4bc7-498c-9477-3f560060a2dd.png",
+      "https://user-images.githubusercontent.com/37457094/151452576-3913218f-03d0-491a-8ee9-ccbb652de73f.png",
     imageDesktop:
-      "https://user-images.githubusercontent.com/37457094/188992488-27c28402-4bc7-498c-9477-3f560060a2dd.png",
-    details: ["Back End Dev", "2022"],
-    description:
-      "This is a ruby on rails mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-    langs: ["ruby", "ruby on rails", "css"],
-    gitLink: "https://budgetapp-1.herokuapp.com/",
-    srcLink: "https://github.com/ismailakinkunmi/rails-budget-app",
+      "https://user-images.githubusercontent.com/37457094/151452601-fb501a21-e1fe-47be-8f32-083a6fb3e023.png",
+
+    details: ["Front End Dev", "2022"],
+    description: "Responsive app that  render some popular people on earth",
+    langs: ["html", "javascript", "css"],
+    gitLink: "https://ismailakinkunmi.github.io/Capstone1/#",
+    srcLink: "https://github.com/ismailakinkunmi/Capstone1",
   },
   {
     id: 3,
+    title: "Library",
+    subTitle: "Awesome book",
+    imageMobile: "./img/Snapshoot-Portfolio.png",
+    imageDesktop:
+      "https://user-images.githubusercontent.com/37457094/151448634-c359557e-e991-4ad0-8773-bda7d9827343.png",
+
+    details: ["Front End Dev", "2022"],
+    description:
+      "Allow users to add book and author and data are preserved in the local storage.",
+    langs: ["html", "javascript", "css"],
+    gitLink: "https://ismailakinkunmi.github.io/AwesomeBook-ES6/",
+    srcLink: "https://github.com/ismailakinkunmi/AwesomeBook-ES6",
+  },
+  {
+    id: 4,
     title: "Space Travlers' Hub",
     subTitle: "",
     imageMobile:
@@ -70,7 +86,7 @@ const cardObject = [
     srcLink: "https://github.com/ismailakinkunmi/space-travelers-hub",
   },
   {
-    id: 4,
+    id: 5,
     title: "World-pandemic: Covid-19",
     subTitle: "",
     imageMobile:
